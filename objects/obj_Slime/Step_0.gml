@@ -1,4 +1,6 @@
 
+event_inherited()
+
 x += enemySpeed * moving
 
 if(HP <=0){

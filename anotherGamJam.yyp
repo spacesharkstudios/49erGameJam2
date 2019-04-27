@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "79b21a71-afe3-4563-a356-b0adaf291184",
+            "Value": {
+                "id": "d28af6fd-d86b-456a-853e-75182c36d6ad",
+                "resourcePath": "objects\\obj_KnockbackEnemy\\obj_KnockbackEnemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7a363839-421e-4531-a52b-a1ed80ca1d27",
             "Value": {
                 "id": "af476c00-9a69-4d65-aa34-d72d42d87279",
@@ -644,6 +652,14 @@
                 "id": "8c0b9b5a-894f-4e41-934f-092d53d264a4",
                 "resourcePath": "views\\f9750322-5d45-43e1-b66f-fed07f2c4cab.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "faaa15f7-ad23-41be-9ca1-2bdbf83b0ae0",
+            "Value": {
+                "id": "2c900dc4-3f32-483d-9c7e-5367c6816816",
+                "resourcePath": "objects\\obj_FallingEnemy\\obj_FallingEnemy.yy",
+                "resourceType": "GMObject"
             }
         },
         {
