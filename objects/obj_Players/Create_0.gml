@@ -13,3 +13,4 @@ enemyChargerCooldown = 0;
 enemySlimeCooldown = 0;
 specialAttactCooldown = 0;
 specialAttackCost = 15;
+countingN = 0;

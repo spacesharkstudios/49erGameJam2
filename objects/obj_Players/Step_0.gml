@@ -34,6 +34,7 @@ y += vertical;
 
 // jumping
 if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {
+	scr_PlayAudio(sfx_player_jump);
 	vertical = -30;
 	jumped = true;
 }
@@ -100,6 +101,7 @@ if ((basicAttackCooldown <= 0) && (attack)) {
 	} else {
 		instance_create_layer(x -20 , y + 10, "instances", obj_BasicAttack);
 	}
+	scr_PlayAudio(sfx_player_atk);
 }
 
 
@@ -111,9 +113,24 @@ if((specialAttactCooldown <= 0) && (specialAttack) && (manaPoints >= specialAtta
 }
 
 
+//handles health alarm
+if (healthPoints <= 20) {
+	healthLoop = true;
+} else {
+	healthLoop = false;	
+}
+
+if (healthLoop = true) {
+	if (countingN%20 = 0) {
+		scr_PlayAudio(sfx_player_low)
+	}
+}
+
+
 // handles death
 if (healthPoints <= 0) {
 	instance_destroy();
+	scr_PlayAudio(sfx_player_def)
 }
 
 specialAttactCooldown--;
