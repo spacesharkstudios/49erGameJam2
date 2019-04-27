@@ -19,6 +19,7 @@ if (place_meeting(x + horizontal, y, obj_Wall)) {
 	while (!place_meeting(x + sign(horizontal), y, obj_Wall)) {
 		x += sign(horizontal);
 	}
+	knockback = 0;
 } else {
 	x += horizontal;
 }

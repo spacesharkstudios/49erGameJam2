@@ -11,5 +11,6 @@ if (place_meeting(x, y + vertical, obj_Wall)) {
 	}
 	vertical = 0;
 	jumped = false;
+	knockback = 0;
 }
 y += vertical;
