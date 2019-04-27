@@ -51,12 +51,16 @@ if (horizontal > 0) {
 // state change
 if (input_change1) {
 	state = 1;
+	scr_PlayAudio(sfx_player_tran);
 } else if (input_change2) {
 	state = 2;
+	scr_PlayAudio(sfx_player_tran);
 } else if (input_change3) {
 	state = 3;
+	scr_PlayAudio(sfx_player_tran);
 } else if (input_change4) {
 	state = 4;
+	scr_PlayAudio(sfx_player_tran);
 }
 
 // handles animations
