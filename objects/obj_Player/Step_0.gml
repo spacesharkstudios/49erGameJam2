@@ -1,6 +1,6 @@
 var input_left = keyboard_check(key_left);
 var input_right = keyboard_check(key_right);
-var input_jump = keyboard_check(vk_space);
+var input_jump = keyboard_key_press(vk_space);
 
 var move = input_right - input_left;
 var horizontal = move * playerSpeed;
@@ -16,6 +16,9 @@ if (place_meeting(x + horizontal, y, obj_Wall)) {
 } else {
 	x += horizontal;
 }
+
+
+
 
 // vertical movement
 if (place_meeting(x, y + vertical, obj_Wall)) {
