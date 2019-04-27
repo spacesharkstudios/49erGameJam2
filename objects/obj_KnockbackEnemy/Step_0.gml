@@ -6,7 +6,7 @@ if (is_knocked_back != 0) {
 }
 
 if (knockback != 0) {
-	pos = knockback / abs(knockback)
+	pos = sign(knockback)
 	knockback -= pos
 	horizontal = pos * knockback_force_horizontal
 }

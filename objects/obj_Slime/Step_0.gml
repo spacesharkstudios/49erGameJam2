@@ -3,7 +3,7 @@ horizontal = enemySpeed * moving
 
 event_inherited()
 if (knockback != 0) {
-	moving = knockback / abs(knockback)
+	moving = sign(knockback)
 }
 
 x += horizontal
