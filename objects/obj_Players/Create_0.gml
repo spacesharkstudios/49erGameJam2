@@ -8,4 +8,5 @@ facing = 1;
 basicAttackCooldown = 0;
 state = 1;
 healthPoints = 100;
+manaPoints = 100;
 enemyChargerCooldown = 0;
