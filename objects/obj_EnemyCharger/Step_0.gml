@@ -1,6 +1,6 @@
 // moves enemy towards player
 if(instance_exists(obj_Players)){
-if(distance_to_object(obj_Players) > 10){
+if(distance_to_object(obj_Players) > 20){
 	move_towards_point(obj_Players.x, obj_Players.y, enemySpeed);
 	gotThere = false;
 }

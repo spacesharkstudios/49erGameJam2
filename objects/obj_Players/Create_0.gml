@@ -4,7 +4,7 @@ playerSpeed = 10;
 vertical = 0;
 jumped = false;
 
-var facing = 1;
+facing = 1;
 basicAttackCooldown = 0;
 state = 1;
 healthPoints = 100;

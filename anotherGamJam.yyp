@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "6ed7dcb1-2b01-48dc-911b-b36e77b2262d",
+            "Value": {
+                "id": "1605410b-9a26-4cf8-be67-fe36ee2be43e",
+                "resourcePath": "sprites\\spr_EnemyChargerGround\\spr_EnemyChargerGround.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7310771e-a57c-4b0d-8b62-1d5afa0b7a50",
             "Value": {
                 "id": "c7dbe529-bc13-4155-9572-96df78c0ee48",
@@ -300,6 +308,14 @@
                 "id": "e9d749ab-d092-43a8-a505-a65f2254ae6d",
                 "resourcePath": "views\\dc8a06fc-0a6c-4501-a99e-088c03cb73de.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ddd12860-2c79-475e-83f8-1830086ebd74",
+            "Value": {
+                "id": "0e55e9ff-077c-4e73-8a8a-eb8273cd1aab",
+                "resourcePath": "objects\\obj_EnemyChargerGround\\obj_EnemyChargerGround.yy",
+                "resourceType": "GMObject"
             }
         },
         {
