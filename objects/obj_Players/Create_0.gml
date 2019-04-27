@@ -1,7 +1,7 @@
 
-playerGravity = 2;
+event_inherited()
+
 playerSpeed = 10;
-vertical = 0;
 jumped = false;
 
 facing = 1;

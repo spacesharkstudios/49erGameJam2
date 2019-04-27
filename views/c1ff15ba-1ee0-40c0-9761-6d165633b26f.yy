@@ -10,7 +10,7 @@
         "61b0389b-b57d-424d-8898-6e4a12009a68"
     ],
     "filterType": "GMObject",
-    "folderName": "obj_UI",
+    "folderName": "group_UI",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

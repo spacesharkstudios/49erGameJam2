@@ -2,7 +2,7 @@
 // knockback physics
 event_inherited()
 
-vertical = vertical + enemyGravity;
+vertical = vertical + object_gravity;
 
 // vertical movement
 if (place_meeting(x, y + vertical, obj_Wall)) {

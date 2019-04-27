@@ -2,7 +2,7 @@
     "id": "79b21a71-afe3-4563-a356-b0adaf291184",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_KnockbackEnemy",
+    "name": "obj_KnockbackObj",
     "eventList": [
         {
             "id": "486f1527-4c37-4cae-a947-9b2c8751d04c",

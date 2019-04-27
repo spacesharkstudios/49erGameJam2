@@ -2,7 +2,7 @@
     "id": "faaa15f7-ad23-41be-9ca1-2bdbf83b0ae0",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_FallingEnemy",
+    "name": "obj_FallingObj",
     "eventList": [
         {
             "id": "8bbfeb26-466a-4801-b5a0-08af595facd2",
