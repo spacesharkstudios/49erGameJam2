@@ -8,15 +8,12 @@ var input_change3 = keyboard_check_pressed(ord("3"));
 var input_change4 = keyboard_check_pressed(ord("4"));
 var attack = keyboard_check_pressed(ord("O"));
 
-
 var move = input_right - input_left;
 var horizontal = move * playerSpeed;
 vertical = vertical + playerGravity;
 
-
 // horizontal movement
 if (place_meeting(x + horizontal, y, obj_Wall)) {
-	
 	while (!place_meeting(x + sign(horizontal), y, obj_Wall)) {
 		x += sign(horizontal);
 	}
@@ -34,13 +31,11 @@ if (place_meeting(x, y + vertical, obj_Wall)) {
 }
 y += vertical;
 
-
 // jumping
 if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {
 	vertical = -30;
 	jumped = true;
 }
-
 
 // sprite facing
 if (horizontal > 0) {
@@ -52,91 +47,57 @@ if (horizontal > 0) {
 }
 
 // state change
-if(input_change1){
+if (input_change1) {
 	state = 1;
-}
-else if(input_change2){
+} else if (input_change2) {
 	state = 2;
-}
-else if(input_change3){
+} else if (input_change3) {
 	state = 3;
-}
-else if(input_change4){
+} else if (input_change4) {
 	state = 4;
 }
 
-
 // handles animations
-if(state == 1){
-	
-	if(jumped){
+if (state == 1) {
+	if (jumped) {
 		sprite_index = spr_PlayerFire_Jump;
-	}
-	else if(move != 0){
+	} else if (move != 0) {
 		sprite_index = spr_PlayerFire_Run;
-	}
-	else if(attack){
+	} else if (attack) {
 		sprite_index = spr_PlayerFire_Attack;
-	}
-	else{
+	} else {
 		sprite_index = spr_PlayerFire_Idle;
 	}
-	
-	
-}
-else if(state == 2){
-	
-	if(jumped){
+} else if (state == 2) {
+	if (jumped) {
 		sprite_index = spr_PlayerWater_Jump;
-	}
-	else if(move != 0){
+	} else if (move != 0) {
 		sprite_index = spr_PlayerWater_Run;
-	}
-	else if(attack){
+	} else if (attack) {
 		sprite_index = spr_PlayerFire_Attack;
-	}
-	else{
+	} else {
 		sprite_index = spr_PlayerWater_Idle;
 	}
+} else if (state == 3) {
+	
+} else {
 	
 }
-else if(state == 3){
-}
-else{
-}
-
 
 // handles basic attacks
-if((basicAttackCooldown <= 0) && (attack)){
+if ((basicAttackCooldown <= 0) && (attack)) {
 	basicAttackCooldown = 10;
-	
-	if(facing == 1){
-		
+	if (facing == 1) {
 		instance_create_layer(x + 20, y + 10, "instances", obj_BasicAttack);
-	}
-	else{
+	} else {
 		instance_create_layer(x -20 , y + 10, "instances", obj_BasicAttack);
 	}
 }
 
-
 // handles death
-if(healthPoints <= 0){
+if (healthPoints <= 0) {
 	instance_destroy();
 }
 
-
-
-
-
 basicAttackCooldown--;
 enemyChargerCooldown++;
-
-
-
-
-
-
-
-
-

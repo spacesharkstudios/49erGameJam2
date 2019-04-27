@@ -4,7 +4,6 @@ HP = 40;
 attackCooldown = 35
 damageCooldown = 25;
 
-
 enemyGravity = 2;
 vertical = 0;
 jumped = false;
@@ -14,5 +13,3 @@ input_right = 0;
 input_left = 0;
 input_jump = false;
 move = 0;
-
-
