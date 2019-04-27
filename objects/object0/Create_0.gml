@@ -1,7 +1,6 @@
-hsp = 0;
-vsp = 0;
-playerGravity = 1;
-playerSpeed = 1;
+
+playerGravity = 5;
+playerSpeed = 10;
 vertical = 0;
 
 key_left = ord("A");
