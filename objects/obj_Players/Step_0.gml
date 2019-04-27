@@ -30,13 +30,15 @@ if (place_meeting(x, y + vertical, obj_Wall)) {
 		y += sign(vertical);
 	}
 	vertical = 0;
+	jumped = false;
 }
 y += vertical;
 
 
 // jumping
 if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {
-	vertical = -30; 
+	vertical = -30;
+	jumped = true;
 }
 
 
@@ -49,17 +51,66 @@ if (horizontal > 0) {
 	facing = -1;
 }
 
+// state change
 if(input_change1){
-	sprite_index = spr_Player1;
+	state = 1;
 }
 else if(input_change2){
-	sprite_index = spr_Player2;
+	state = 2;
+}
+else if(input_change3){
+	state = 3;
+}
+else if(input_change4){
+	state = 4;
 }
 
 
+// handles animations
+if(state == 1){
+	
+	if(jumped){
+		sprite_index = spr_PlayerFire_Jump;
+	}
+	else if(move != 0){
+		sprite_index = spr_PlayerFire_Run;
+	}
+	else{
+		sprite_index = spr_PlayerFire_Idle;
+	}
+	
+	
+}
+else if(state == 2){
+	
+	if(jumped){
+		sprite_index = spr_PlayerWater_Jump;
+	}
+	else if(move != 0){
+		sprite_index = spr_PlayerWater_Run;
+	}
+	else{
+		sprite_index = spr_PlayerWater_Idle;
+	}
+	
+}
+else if(state == 3){
+}
+else{
+}
+
+
+
+
+
+
+
+
+
+// handles basic attacks
 if((basicAttackCooldown <= 0) && (attack)){
 	basicAttackCooldown = 10;
-	instance_create_layer(x, y, "instances", obj_BasicAttack);
+	instance_create_layer(x + (50*facing), y + 10, "instances", obj_BasicAttack);
 }
 
 
