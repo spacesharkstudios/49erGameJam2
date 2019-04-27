@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_HealthBlock",
     "eventList": [
-        
+        {
+            "id": "a078e210-d171-42e1-9f6f-b2b706333ec7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "308bae70-6bcb-40a7-9ad6-bfbac98883aa"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

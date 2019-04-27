@@ -15,3 +15,4 @@ input_left = 0;
 input_jump = false;
 move = 0;
 
+

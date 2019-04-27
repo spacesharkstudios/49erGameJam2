@@ -6,16 +6,17 @@ vertical = vertical + enemyGravity;
 // moves enemy towards player
 if(instance_exists(obj_Players)){
 	
+	// am i close enough to stop moving and attack
 	if(distance_to_object(obj_Players) < 20){
 		move = 0;
 		gotThere = true;
-	}
+	}// should I move left
 	else if(x > obj_Players.x){
 		input_left = 1;
 		input_right = 0;
 		move = input_right - input_left;
 		gotThere = false;
-	}
+	}// should i move right
 	else if(x < obj_Players.x){
 		
 		input_right = 1;
@@ -24,21 +25,13 @@ if(instance_exists(obj_Players)){
 		gotThere = false;
 	}
 	
-	
+	// should i jump
 	if(y > (obj_Players.y + 50)){
 		input_jump = true;
 	}
 	else{
 		input_jump = false;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	// attacks player
