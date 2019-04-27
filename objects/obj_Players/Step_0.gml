@@ -1,8 +1,12 @@
-var input_left = keyboard_check(key_left);
-var input_right = keyboard_check(key_right);
+// controls
+var input_left = keyboard_check(ord("A"));
+var input_right = keyboard_check(ord("D"));
 var input_jump = keyboard_check_pressed(vk_space);
-var input_change1 = keyboard_check_pressed(change1);
-var input_change2 = keyboard_check_pressed(change2);
+var input_change1 = keyboard_check_pressed(ord("1"));
+var input_change2 = keyboard_check_pressed(ord("2"));
+var input_change3 = keyboard_check_pressed(ord("3"));
+var input_change4 = keyboard_check_pressed(ord("4"));
+var attack = keyboard_check_pressed(ord("O"));
 
 
 var move = input_right - input_left;
@@ -35,11 +39,57 @@ if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {
 	vertical = -30; 
 }
 
+
+// sprite facing
+if (horizontal > 0) {
+	image_xscale = 1;
+	facing = 1;
+} else if (horizontal < 0) {
+	image_xscale = -1;
+	facing = -1;
+}
+
 if(input_change1){
 	sprite_index = spr_Player1;
 }
 else if(input_change2){
 	sprite_index = spr_Player2;
 }
+
+
+if((basicAttackCooldown <= 0) && (attack)){
+	basicAttackCooldown = 10;
+	instance_create_layer(x, y, "instances", obj_BasicAttack);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+basicAttackCooldown--;
+
+
+
+
+
+
+
+
 
 
