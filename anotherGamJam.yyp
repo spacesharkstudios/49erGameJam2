@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "8d0178bc-58ef-41e1-9a15-b479eae9932a",
+            "Value": {
+                "id": "ca9a81a5-8f00-4434-90fd-852bb23aad01",
+                "resourcePath": "sprites\\spr_PlayerWater_AttackEffect\\spr_PlayerWater_AttackEffect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "95f2668b-fa76-4207-9b41-1dde789ddd7b",
             "Value": {
                 "id": "a856c225-663d-4b1e-a22e-88ff28535654",
