@@ -1,3 +1,6 @@
+
+event_inherited()
+
 enemySpeed = 6;
 gotThere = false;
 HP = 40;

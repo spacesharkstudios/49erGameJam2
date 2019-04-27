@@ -1,7 +1,6 @@
 
 // ground AI Movement
 var horizontal = move * enemySpeed;
-vertical = vertical + enemyGravity;
 
 // Moves enemy towards player
 if (instance_exists(obj_Players)) {
