@@ -1,0 +1,2 @@
+
+x += enemySpeed * moving
