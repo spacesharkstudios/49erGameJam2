@@ -1,4 +1,7 @@
 if(instance_exists(obj_Players)){
+	x = (obj_Players.x - 450);
+	y = (obj_Players.y - 350);
+	
 
 if(obj_Players.healthPoints == 100){
 	instance1.visible = true;

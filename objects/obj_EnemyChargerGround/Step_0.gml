@@ -3,16 +3,19 @@
 var horizontal = move * enemySpeed;
 vertical = vertical + enemyGravity;
 
-// moves enemy towards player
+// Moves enemy towards player
 if (instance_exists(obj_Players)) {
+	// Am I close enough to stop moving and attack
 	if (distance_to_object(obj_Players) < 20) {
 		move = 0;
 		gotThere = true;
+	// Should I move left
 	} else if (x > obj_Players.x) {
 		input_left = 1;
 		input_right = 0;
 		move = input_right - input_left;
 		gotThere = false;
+	// Should I move right
 	} else if (x < obj_Players.x) {
 		input_right = 1;
 		input_left = 0;
@@ -20,13 +23,14 @@ if (instance_exists(obj_Players)) {
 		gotThere = false;
 	}
 	
+	// Should I jump
 	if (y > (obj_Players.y + 50)) {
 		input_jump = true;
 	} else {
 		input_jump = false;
 	}
 	
-	// attacks player
+	// Attacks player
 	if ((gotThere) && (attackCooldown >= 80)) {
 		if(x > obj_Players.x){
 			instance_create_layer(x - 64, y, "instances", obj_EnemyChargerAttack);
