@@ -1,7 +1,7 @@
 
-if(obj_EnemyCharger.damageCooldown >= 25){
-	obj_EnemyCharger.HP = obj_EnemyCharger.HP - damage;
+if(other.damageCooldown >= 25){
+	other.HP = other.HP - damage;
 }
- obj_EnemyCharger.damageCooldown = 0;
+other.damageCooldown = 0;
 
 
