@@ -1,38 +1,28 @@
 {
-    "id": "173d157a-1999-4f96-bb5e-84872bbe5780",
+    "id": "8ad7bdbe-8ad7-4999-badb-d0a2169b0e25",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_Players",
+    "name": "obj_EnemyChargerAttack",
     "eventList": [
         {
-            "id": "55a842fe-9f4c-4efc-9e74-0ea41eb86cc7",
+            "id": "7eb0efd1-901d-497c-bdce-d369ec1e004e",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "173d157a-1999-4f96-bb5e-84872bbe5780"
+            "m_owner": "8ad7bdbe-8ad7-4999-badb-d0a2169b0e25"
         },
         {
-            "id": "6c2db4ef-29ea-477f-918d-98f09d259ed9",
+            "id": "10b21a45-4f54-49c4-b105-215227bd9966",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "173d157a-1999-4f96-bb5e-84872bbe5780"
-        },
-        {
-            "id": "27ca1204-f6d7-4a2e-badf-f4b98da7d0ee",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "8ad7bdbe-8ad7-4999-badb-d0a2169b0e25",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "173d157a-1999-4f96-bb5e-84872bbe5780"
+            "m_owner": "8ad7bdbe-8ad7-4999-badb-d0a2169b0e25"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -53,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "b2c544f6-64ae-4521-ba42-cf1945088b3c",
+    "spriteId": "541489e4-8785-4c09-a58f-0991dbbb0ff6",
     "visible": true
 }

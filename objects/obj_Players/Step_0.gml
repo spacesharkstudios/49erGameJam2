@@ -75,6 +75,9 @@ if(state == 1){
 	else if(move != 0){
 		sprite_index = spr_PlayerFire_Run;
 	}
+	else if(attack){
+		sprite_index = spr_PlayerFire_Attack;
+	}
 	else{
 		sprite_index = spr_PlayerFire_Idle;
 	}
@@ -89,6 +92,9 @@ else if(state == 2){
 	else if(move != 0){
 		sprite_index = spr_PlayerWater_Run;
 	}
+	else if(attack){
+		sprite_index = spr_PlayerFire_Attack;
+	}
 	else{
 		sprite_index = spr_PlayerWater_Idle;
 	}
@@ -100,41 +106,31 @@ else{
 }
 
 
-
-
-
-
-
-
-
 // handles basic attacks
 if((basicAttackCooldown <= 0) && (attack)){
 	basicAttackCooldown = 10;
-	instance_create_layer(x + (50*facing), y + 10, "instances", obj_BasicAttack);
+	
+	if(facing == 1){
+		
+		instance_create_layer(x + 20, y + 10, "instances", obj_BasicAttack);
+	}
+	else{
+		instance_create_layer(x -20 , y + 10, "instances", obj_BasicAttack);
+	}
+}
+
+
+// handles death
+if(healthPoints <= 0){
+	instance_destroy();
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 basicAttackCooldown--;
-
+enemyChargerCooldown++;
 
 
 

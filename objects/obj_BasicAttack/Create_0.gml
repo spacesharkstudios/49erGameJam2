@@ -1,1 +1,2 @@
-existance = 2;
+existance = 10;
+damage = 20;
