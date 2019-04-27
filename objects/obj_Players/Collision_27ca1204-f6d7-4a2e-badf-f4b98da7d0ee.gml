@@ -1,6 +1,5 @@
-healthPoints = healthPoints - obj_EnemyChargerAttack.damage;
 
-if(enemyChargerCooldown >= 20){
+if(enemySlimeCooldown >= 20){
 	healthPoints = healthPoints - obj_EnemyChargerAttack.damage;
+	enemySlimeCooldown = 0;
 }
- enemyChargerCooldown = 0;

@@ -10,3 +10,6 @@ state = 1;
 healthPoints = 100;
 manaPoints = 100;
 enemyChargerCooldown = 0;
+enemySlimeCooldown = 0;
+specialAttactCooldown = 0;
+specialAttackCost = 15;

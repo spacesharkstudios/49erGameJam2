@@ -7,6 +7,7 @@ var input_change2 = keyboard_check_pressed(ord("2"));
 var input_change3 = keyboard_check_pressed(ord("3"));
 var input_change4 = keyboard_check_pressed(ord("4"));
 var attack = keyboard_check_pressed(ord("O"));
+var specialAttack = keyboard_check_pressed(ord("P"));
 
 var move = input_right - input_left;
 var horizontal = move * playerSpeed;
@@ -59,28 +60,35 @@ if (input_change1) {
 
 // handles animations
 if (state == 1) {
+	specialAttackCost = 15;
 	if (jumped) {
 		sprite_index = spr_PlayerFire_Jump;
 	} else if (move != 0) {
 		sprite_index = spr_PlayerFire_Run;
-	} else if (attack) {
-		sprite_index = spr_PlayerFire_Attack;
 	} else {
 		sprite_index = spr_PlayerFire_Idle;
 	}
 } else if (state == 2) {
+	specialAttackCost = 25;
 	if (jumped) {
 		sprite_index = spr_PlayerWater_Jump;
 	} else if (move != 0) {
 		sprite_index = spr_PlayerWater_Run;
-	} else if (attack) {
-		sprite_index = spr_PlayerFire_Attack;
 	} else {
 		sprite_index = spr_PlayerWater_Idle;
 	}
 } else if (state == 3) {
+	specialAttackCost = 20;
+	if (jumped) {
+		sprite_index = spr_PlayerEarth_Jump;
+	} else if (move != 0) {
+		sprite_index = spr_PlayerEarth_Run;
+	} else {
+		sprite_index = spr_PlayerEarth_Idle;
+	}
 	
 } else {
+	specialAttackCost = 20;
 	
 }
 
@@ -94,10 +102,21 @@ if ((basicAttackCooldown <= 0) && (attack)) {
 	}
 }
 
+
+//special attack
+if((specialAttactCooldown <= 0) && (specialAttack) && (manaPoints >= specialAttackCost)){
+	scr_SpecialAttack();
+	manaPoints = manaPoints - specialAttackCost;
+	
+}
+
+
 // handles death
 if (healthPoints <= 0) {
 	instance_destroy();
 }
 
+specialAttactCooldown--;
 basicAttackCooldown--;
 enemyChargerCooldown++;
+enemySlimeCooldown++;

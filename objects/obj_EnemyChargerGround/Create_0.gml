@@ -13,3 +13,5 @@ input_right = 0;
 input_left = 0;
 input_jump = false;
 move = 0;
+
+manaReward = 5
