@@ -1,5 +1,5 @@
 enemySpeed = 6;
-HP = 20
+HP = 200
 damage = 5;
 attackCooldown = 35;
 damageCooldown = 25;
@@ -8,3 +8,6 @@ damageCooldown = 25;
 moving = 1;
 
 manaReward = 5;
+stun = false;
+stunCooldown = 0;
+myStunDuration = 0;

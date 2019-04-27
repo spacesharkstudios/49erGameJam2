@@ -1,7 +1,7 @@
 // controls
 var input_left = keyboard_check(ord("A"));
 var input_right = keyboard_check(ord("D"));
-var input_jump = keyboard_check_pressed(vk_space);
+var input_jump = (keyboard_check_pressed(vk_space) ||  keyboard_check_pressed(ord("W")));
 var input_change1 = keyboard_check_pressed(ord("1"));
 var input_change2 = keyboard_check_pressed(ord("2"));
 var input_change3 = keyboard_check_pressed(ord("3"));
@@ -91,6 +91,8 @@ if (state == 1) {
 	specialAttackCost = 20;
 	
 }
+
+
 
 // handles basic attacks
 if ((basicAttackCooldown <= 0) && (attack)) {

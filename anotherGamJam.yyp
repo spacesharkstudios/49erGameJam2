@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "4af9babb-593d-4883-9a8f-58542c2c9719",
+            "Value": {
+                "id": "001d47a9-cd23-4657-940c-f187241eda8a",
+                "resourcePath": "sprites\\spr_EarthATT\\spr_EarthATT.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4e7162f0-a04c-4460-ae09-1dfd728f076e",
             "Value": {
                 "id": "75990689-c076-4e5d-852f-0db01afd30e8",
@@ -395,6 +403,14 @@
             "Value": {
                 "id": "f6525af1-71f2-40a5-8420-bb4f2403d42e",
                 "resourcePath": "sprites\\spr_PlayerFire_AttackEffect\\spr_PlayerFire_AttackEffect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9d6e13a6-95d8-4732-b649-909544f404af",
+            "Value": {
+                "id": "5223a34f-b7b6-4e52-a9ef-1f64d56a51b8",
+                "resourcePath": "sprites\\spr_AirATT\\spr_AirATT.yy",
                 "resourceType": "GMSprite"
             }
         },

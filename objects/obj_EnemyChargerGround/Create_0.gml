@@ -15,3 +15,8 @@ input_jump = false;
 move = 0;
 
 manaReward = 5
+
+stun = false;
+damageCooldown = 0;
+stunCooldown = 0;
+myStunDuration = 0;
