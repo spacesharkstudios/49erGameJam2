@@ -759,6 +759,14 @@
             }
         },
         {
+            "Key": "9c919da4-21ae-4ed9-a12e-22e677121bef",
+            "Value": {
+                "id": "8dcb779c-fd37-44c5-b9a7-7a5d7e850757",
+                "resourcePath": "rooms\\gitdaddy\\gitdaddy.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "9d6e13a6-95d8-4732-b649-909544f404af",
             "Value": {
                 "id": "5223a34f-b7b6-4e52-a9ef-1f64d56a51b8",
