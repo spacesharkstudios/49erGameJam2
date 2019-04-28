@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "567fca4e-f090-4904-a0d7-b956fde87d51",
+            "Value": {
+                "id": "f872a5d0-2207-4e1a-b497-9290c0c11c40",
+                "resourcePath": "objects\\obj_Barrier\\obj_Barrier.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5903bda4-7dd4-4268-b9f9-93e43054e7bc",
             "Value": {
                 "id": "2c5e6268-f97d-48a5-9846-eafdf6830214",

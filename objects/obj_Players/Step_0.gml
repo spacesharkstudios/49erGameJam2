@@ -99,7 +99,7 @@ if (state == 1) {
 		sprite_index = spr_PlayerEarth_Idle;
 	}
 	
-	
+	scr_PassivesCont();
 	
 } else {
 	specialAttackCost = 20;
@@ -112,6 +112,8 @@ if (state == 1) {
 	} else {
 		sprite_index = spr_PlayerAir_Idle;
 	}
+	
+	scr_PassivesCont();
 	
 }
 
