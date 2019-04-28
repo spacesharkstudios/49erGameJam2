@@ -11,7 +11,7 @@ if (obj_Players.state == 1) {
 	
 } else if (obj_Players.state == 2) {
 	
-	instance_create_layer(obj_Players.x, obj_Players.y, "instances", obj_WaterSpecial);
+	instance_create_layer(obj_Players.x, obj_Players.y - 20, "Effects", obj_WaterSpecial);
 	scr_PlayAudio(sfx_spec_heal);
 	
 } else if (obj_Players.state == 3) {

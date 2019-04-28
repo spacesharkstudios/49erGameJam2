@@ -49,8 +49,8 @@ if (place_meeting(x + horizontal, y, obj_Wall)) {
 }
 
 // jumping
-if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {
-	vertical = -30;
+if (place_meeting(x, y + 1, obj_Wall)) {
+	vertical = -20;
 	jumped = true;
 }
 

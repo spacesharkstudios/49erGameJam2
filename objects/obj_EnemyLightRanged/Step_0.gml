@@ -71,12 +71,11 @@ if (active) {
 	}
 
 	// sprite facing
-	if (horizontal > 0) {
+	if (facing == -1) {
 		image_xscale = 1;
-		facing = 1;
-	} else if (horizontal < 0) {
+		
+	} else if (facing == 1) {
 		image_xscale = -1;
-		facing = -1;
 		}
 	
 	}
