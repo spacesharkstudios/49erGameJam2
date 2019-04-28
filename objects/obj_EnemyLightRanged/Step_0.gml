@@ -1,6 +1,6 @@
 
 // ground AI Movement
-var horizontal = move * enemySpeed;
+horizontal = move * enemySpeed;
 
 // Moves enemy towards player
 if (instance_exists(obj_Players)) {
@@ -51,8 +51,7 @@ if (instance_exists(obj_Players)) {
 	}
 	
 	// falling & knockback physics
-
-	
+	event_inherited()
 
 // horizontal movement
 if (place_meeting(x + horizontal, y, obj_Wall)) {

@@ -152,8 +152,9 @@ if (healthLoop = true) {
 
 // handles death
 if (healthPoints <= 0) {
-	instance_destroy();
-	scr_PlayAudio(sfx_player_def)
+	//instance_destroy();
+	//scr_PlayAudio(sfx_player_def)
+	healthPoints = 100;
 }
 
 
