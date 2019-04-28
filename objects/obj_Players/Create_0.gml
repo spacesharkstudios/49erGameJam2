@@ -1,7 +1,8 @@
 
-playerGravity = 2;
+event_inherited()
+knockback_force_horizontal = 15
+
 playerSpeed = 10;
-vertical = 0;
 jumped = false;
 
 facing = 1;

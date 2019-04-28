@@ -13,7 +13,7 @@
         "fc93347e-c89f-41e9-8d9c-0f02e8af1154"
     ],
     "filterType": "GMObject",
-    "folderName": "obj_Attacks",
+    "folderName": "group_Attacks",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -1,7 +1,6 @@
 
 // ground AI Movement
 var horizontal = move * enemySpeed;
-vertical = vertical + enemyGravity;
 
 // Moves enemy towards player
 if (instance_exists(obj_Players)) {
@@ -41,6 +40,9 @@ if (instance_exists(obj_Players)) {
 	}
 }
 
+// falling & knockback physics
+event_inherited()
+
 // horizontal movement
 if (place_meeting(x + horizontal, y, obj_Wall)) {
 	
@@ -50,16 +52,6 @@ if (place_meeting(x + horizontal, y, obj_Wall)) {
 } else {
 	x += horizontal;
 }
-
-// vertical movement
-if (place_meeting(x, y + vertical, obj_Wall)) {
-	while (!place_meeting(x, y + sign(vertical), obj_Wall)) {
-		y += sign(vertical);
-	}
-	vertical = 0;
-	jumped = false;
-}
-y += vertical;
 
 // jumping
 if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {

@@ -10,27 +10,19 @@ var attack = keyboard_check_pressed(ord("O"));
 var specialAttack = keyboard_check_pressed(ord("P"));
 
 var move = input_right - input_left;
-var horizontal = move * playerSpeed;
-vertical = vertical + playerGravity;
+horizontal = move * playerSpeed;
+
+event_inherited()
 
 // horizontal movement
 if (place_meeting(x + horizontal, y, obj_Wall)) {
 	while (!place_meeting(x + sign(horizontal), y, obj_Wall)) {
 		x += sign(horizontal);
 	}
+	knockback = 0;
 } else {
 	x += horizontal;
 }
-
-// vertical movement
-if (place_meeting(x, y + vertical, obj_Wall)) {
-	while (!place_meeting(x, y + sign(vertical), obj_Wall)) {
-		y += sign(vertical);
-	}
-	vertical = 0;
-	jumped = false;
-}
-y += vertical;
 
 // jumping
 if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {

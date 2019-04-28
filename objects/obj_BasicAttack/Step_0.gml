@@ -1,4 +1,4 @@
-existance--;
+existence--;
 if(instance_exists(obj_Players)){
 if(obj_Players.facing == 1){
 	x = (obj_Players.x + 20);
@@ -11,7 +11,7 @@ else{
 	image_xscale = -1;
 }
 
-if(existance <= 0){
+if(existence <= 0){
 	instance_destroy();
 }
 }
