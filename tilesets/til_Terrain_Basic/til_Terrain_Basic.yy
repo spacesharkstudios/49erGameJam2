@@ -1,8 +1,8 @@
 {
-    "id": "54404909-f4db-4dc0-8d9e-b1c8a74ec6f6",
+    "id": "c40ef6e4-489b-4699-ac9e-6b7dc7a38721",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "tileset0",
+    "name": "til_Terrain_Basic",
     "auto_tile_sets": [
         
     ],
@@ -17,7 +17,7 @@
     "out_columns": 2,
     "out_tilehborder": 2,
     "out_tilevborder": 2,
-    "spriteId": "8e567d41-ca57-49a5-8f30-901269e1c7d3",
+    "spriteId": "3463b02d-48f3-46e3-802a-546a4eece5d4",
     "sprite_no_export": true,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "tile_animation": {
@@ -26,7 +26,9 @@
             0,
             1,
             2,
-            3
+            3,
+            4,
+            5
         ],
         "SerialiseFrameCount": 1
     },
@@ -34,7 +36,7 @@
         
     ],
     "tile_animation_speed": 15,
-    "tile_count": 4,
+    "tile_count": 6,
     "tileheight": 64,
     "tilehsep": 0,
     "tilevsep": 0,
