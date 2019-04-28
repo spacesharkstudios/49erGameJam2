@@ -15,6 +15,10 @@ if(instance_exists(obj_Players)){
 	if(state == 1){
 		
 		
+		
+		
+		
+		
 		if(summonSlimesCounter  >= summonSlimesCooldown){
 			instance_create_layer(x, y, "instances", obj_MiniSlime);
 		}
@@ -22,6 +26,8 @@ if(instance_exists(obj_Players)){
 			instance_create_layer(x, y, "instances", obj_MiniSlime);
 		}
 		else{
+			
+			
 			instance_create_layer(x, y, "instances", obj_);
 		}
 		
