@@ -359,11 +359,27 @@
             }
         },
         {
+            "Key": "54404909-f4db-4dc0-8d9e-b1c8a74ec6f6",
+            "Value": {
+                "id": "4b836b6c-ae90-411f-9d74-05464e034305",
+                "resourcePath": "tilesets\\tileset0\\tileset0.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "54754a22-264f-42f6-84df-7301adf17065",
             "Value": {
                 "id": "9920d4e1-cf26-4b4e-b21d-a8cc30e514a2",
                 "resourcePath": "sounds\\sfx_spec_heal\\sfx_spec_heal.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "575c9b97-c337-4963-8c7c-be01434daebc",
+            "Value": {
+                "id": "f2575de1-31c4-42a8-8ab9-e63e1f74ef6c",
+                "resourcePath": "sprites\\sprite38\\sprite38.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -571,6 +587,14 @@
             "Value": {
                 "id": "ca9a81a5-8f00-4434-90fd-852bb23aad01",
                 "resourcePath": "sprites\\spr_PlayerWater_AttackEffect\\spr_PlayerWater_AttackEffect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8e567d41-ca57-49a5-8f30-901269e1c7d3",
+            "Value": {
+                "id": "0f39332e-e98a-4d7f-9c9f-3bb7a0ddf6af",
+                "resourcePath": "sprites\\spr_Wall1\\spr_Wall1.yy",
                 "resourceType": "GMSprite"
             }
         },
