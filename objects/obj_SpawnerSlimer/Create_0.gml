@@ -3,10 +3,10 @@ event_inherited();
 
 
 //stats
-HP = 2;
+HP = 30;
 enemySpeed = 3;
 attackRate = 5;
-damage = 10;
+damage = 15;
 manaReward = 40;
 finalStunDuration = 150;
 

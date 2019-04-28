@@ -11,9 +11,9 @@ facing = 1;
 basicAttackCooldown = 0;
 
 state = 2;
-healthPoints = 100000;
+healthPoints = 150;
 
-manaPoints = 10000000;
+manaPoints = 150;
 invincibility = 0;
 invincibilitySet = 50;
 specialAttactCooldown = 0;

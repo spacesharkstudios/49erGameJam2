@@ -152,6 +152,7 @@ if (healthLoop = true) {
 // handles death
 if (healthPoints <= 0) {
 	audio_stop_all();
+	obj_GameController.playerisdead = true;
 	scr_PlayAudio(sfx_player_def);
 	instance_destroy();
 	
