@@ -191,14 +191,6 @@
             }
         },
         {
-            "Key": "1ed79b6d-c178-4490-9de7-8e438c527bf7",
-            "Value": {
-                "id": "4313b6c7-b3bf-40f4-9c9e-9d3d83c25322",
-                "resourcePath": "objects\\obj_bgm_player\\obj_bgm_player.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1effc167-f795-4858-b1c8-a2bc923a9a95",
             "Value": {
                 "id": "0bc326f3-d2e4-4279-9ac3-c025e91141f2",
@@ -348,6 +340,14 @@
                 "id": "001d47a9-cd23-4657-940c-f187241eda8a",
                 "resourcePath": "sprites\\spr_EarthATT\\spr_EarthATT.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4bda8df5-8a87-4084-8bec-c936b7143f7e",
+            "Value": {
+                "id": "96139c49-ab79-4d40-80d5-44a222709894",
+                "resourcePath": "objects\\obj_GameController\\obj_GameController.yy",
+                "resourceType": "GMObject"
             }
         },
         {
