@@ -2,8 +2,9 @@ HP = 1000;
 state = 1;
 reachedDest = false;
 
-attackState = 1;
-attackStateCooldown = 0;
+
+attackStateCooldown1 = 200;
+attackStateCooldown2 = 300;
 attackStateCounter = 0;
 
 lightAttackCooldown = 0;
