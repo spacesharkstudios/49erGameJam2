@@ -31,12 +31,13 @@ if (!doubleJump) {
 } else if (onGround) {
 	hasDoubleJump = true;
 }
-if (input_jump && (onGround || hasDoubleJump)) {
+if (input_jump && (onGround || (hasDoubleJump && manaPoints >= doubleJumpCost))) {
 	scr_PlayAudio(sfx_player_jump);
 	vertical = -30;
 	jumped = true;
 	if (!onGround && hasDoubleJump) {
 		hasDoubleJump = false;
+		manaPoints -= doubleJumpCost;
 	}
 }
 

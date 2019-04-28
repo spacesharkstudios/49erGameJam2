@@ -27,6 +27,7 @@ passiveCooldown = 0;
 
 earthBlock = false;
 
-transformationCost = 10;
-transformCooldown = 20;
+transformationCost = 0;
+transformCooldown = 30;
 transformCooldownCounter = 0;
+doubleJumpCost = 5;
