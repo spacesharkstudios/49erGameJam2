@@ -8,13 +8,13 @@ if (active) {
 		if(!stun){
 	
 		// Should I move left
-		if (x > (obj_Players.x + 10)) {
+		if (x > (obj_Players.x + 50)) {
 			input_left = 1;
 			input_right = 0;
 			move = input_right - input_left;
 			gotThere = false;
 		// Should I move right
-		} else if (x < (obj_Players.x - 10)) {
+		} else if (x < (obj_Players.x - 50)) {
 			input_right = 1;
 			input_left = 0;
 			move = input_right - input_left;
@@ -28,7 +28,8 @@ if (active) {
 	
 		// Attacks player
 		if ((gotThere) && (attackCooldown >= attackRate)) {
-			instance_create_layer(x, y + 12, "instances", obj_MiniSlime);
+			instance_create_layer(x + 50, y + 30, "instances", obj_MiniSlime);
+			instance_create_layer(x - 50, y + 30, "instances", obj_MiniSlime);
 			attackCooldown = 0;   
 		}
 	}
