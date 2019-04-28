@@ -4,6 +4,7 @@
 if (instance_exists(obj_Players)) {
 	obj_Players.doubleJump = (obj_Players.state == 4);
 	obj_Players.earthBlock = (obj_Players.state == 3);
+	obj_Players.knockback_resist = (obj_Players.state == 3 ? 1.5 : 1);
 	
 	if(obj_Players.state == 1){
 		
