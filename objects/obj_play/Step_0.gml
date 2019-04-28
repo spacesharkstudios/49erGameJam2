@@ -4,5 +4,5 @@ if (moving) {
 counter++;	
 }
 if (counter % 90 = 0) {
-	room_goto(TestRoom);
+	room_goto(room0);
 }
