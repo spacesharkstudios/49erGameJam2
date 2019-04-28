@@ -1,5 +1,5 @@
 
-if (enemySlimeCooldown >= 20) {
+if (invincibility >= invincibilitySet) {
 	if (state == 3) {
 		if (obj_Players.earthBlock) {
 			obj_Players.earthBlock = false;
@@ -12,5 +12,5 @@ if (enemySlimeCooldown >= 20) {
 		is_knocked_back = sign(x - other.x);
 		healthPoints = healthPoints - obj_Slime.damage;
 	}
-	enemySlimeCooldown = 0;
+	invincibility = 0;
 }

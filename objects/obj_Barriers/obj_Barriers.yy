@@ -1,8 +1,8 @@
 {
-    "id": "fae30ee1-d212-43db-9a97-9c91edee863b",
+    "id": "a8575bfd-49d3-48c0-ad3d-68f7423cf752",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_PropellerSlime",
+    "name": "obj_Barriers",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "faf2b2b5-aecd-4c76-b1b4-c403e8b8097e",
-    "visible": true
+    "spriteId": "cb4b56cd-3ce6-4d7a-960b-de59302c41c1",
+    "visible": false
 }

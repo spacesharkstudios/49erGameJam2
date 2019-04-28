@@ -7,7 +7,7 @@ if (instance_exists(obj_Players)) {
 	if(!stun){
 	
 	// Am I close enough to stop moving and attack
-	if (distance_to_object(obj_Players) < 20) {
+	if (distance_to_object(obj_Players) < 400) {
 		move = 0;
 		gotThere = true;
 	// Should I move left
@@ -34,9 +34,9 @@ if (instance_exists(obj_Players)) {
 	// Attacks player
 	if ((gotThere) && (attackCooldown >= 80)) {
 		if(x > obj_Players.x){
-			instance_create_layer(x - 64, y, "instances", obj_EnemyChargerAttack);
+			instance_create_layer(x - 64, y, "instances", obj_EnemyHeavyRangedAttack);
 		} else {
-			instance_create_layer(x + 64, y, "instances", obj_EnemyChargerAttack);
+			instance_create_layer(x + 64, y, "instances", obj_EnemyHeavyRangedAttack);
 		}
 		attackCooldown = 0;
 	}
@@ -57,7 +57,7 @@ if (place_meeting(x + horizontal, y, obj_Wall)) {
 
 // jumping
 if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {
-	vertical = -30;
+	vertical = -20;
 	jumped = true;
 }
 
@@ -82,7 +82,6 @@ else{
 	}
 }
 	
-
 // handles death
 if (HP <= 0 && instance_exists(obj_Players)) {
 	

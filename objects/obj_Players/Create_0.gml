@@ -10,8 +10,8 @@ basicAttackCooldown = 0;
 state = 1;
 healthPoints = 100;
 manaPoints = 100;
-enemyChargerCooldown = 0;
-enemySlimeCooldown = 0;
+invincibility = 0;
+invincibilitySet = 50;
 specialAttactCooldown = 0;
 specialAttackCost = 15;
 countingN = 0;
@@ -22,3 +22,7 @@ shiftState = false;
 passiveCooldown = 0;
 
 earthBlock = false;
+
+playerLives = 3;
+
+

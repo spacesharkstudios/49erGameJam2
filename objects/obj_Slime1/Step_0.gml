@@ -32,9 +32,9 @@ if (HP <= 0 && instance_exists(obj_Players)) {
 }
 
 if (moving == 1) {
-	sprite_index = spr_EnemySlime_RollBackward
+	image_xscale = 1;
 } else {
-	sprite_index = spr_EnemySlime_RollForward
+	image_xscale = -1;
 }
 
 attackCooldown++;
