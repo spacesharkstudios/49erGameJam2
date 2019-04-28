@@ -2,7 +2,7 @@
 event_inherited();
 
 //stats
-HP = 2000;
+HP = 100;
 enemySpeed = 3;
 attackRate = 90;
 damage = 10;
@@ -48,6 +48,10 @@ bigAttackDamage = 40;
 
 summonSlimesCooldown = 100;
 summonSlimesCounter = 0;
+
+meteorCounter = 0;
+meteorCooldown = 30;
+thing = 0;
 
 
 

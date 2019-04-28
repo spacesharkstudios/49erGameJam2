@@ -43,6 +43,7 @@ if (instance_exists(obj_Players)) {
 	// Attacks player
 	if (gotThere) {
 		
+		
 		scr_BossAttack();
 }
 else{
@@ -96,9 +97,7 @@ if (HP <= 0 && instance_exists(obj_Players)) {
 }
 
 
-if(HP <= (HP / 2)){
-	state = 2;
-}
+
 
 damageCooldown++;
 lightAttackCounter++;
