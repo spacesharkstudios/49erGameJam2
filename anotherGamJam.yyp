@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0b91e240-3d5c-45c3-b780-270755aacbea",
+            "Value": {
+                "id": "5b0bfb5a-1837-4c5f-a26b-df153bb8695d",
+                "resourcePath": "objects\\obj_BigBossAttack\\obj_BigBossAttack.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0be12097-3cc3-4728-84c4-6665697ba893",
             "Value": {
                 "id": "0d2aaf7b-b2a3-4f68-917c-c4f67a347f2c",
@@ -239,6 +247,14 @@
             }
         },
         {
+            "Key": "2a682243-929b-400b-9eb5-32c744ad5106",
+            "Value": {
+                "id": "64a0ee27-bc37-4867-bd09-0c1224015043",
+                "resourcePath": "objects\\obj_lightBossAttack\\obj_lightBossAttack.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2a69b66a-753a-40a9-a518-5bc7877a109c",
             "Value": {
                 "id": "23d2e9da-ec44-4133-9583-8228b001e594",
@@ -276,6 +292,14 @@
                 "id": "45fdc012-2c0e-4223-9552-91b32d9d1936",
                 "resourcePath": "objects\\obj_HealthBlock\\obj_HealthBlock.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "30bad7c5-75b7-43df-85c5-3b0ea07fffd0",
+            "Value": {
+                "id": "fa92caa4-df26-4356-ad1e-eab783c0be64",
+                "resourcePath": "sprites\\spr_Boss\\spr_Boss.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -939,6 +963,14 @@
             "Value": {
                 "id": "de5df226-fbc6-447f-a452-47852dd13431",
                 "resourcePath": "objects\\obj_Camera\\obj_Camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ca264ae9-0e3d-4e53-ada9-f07a6b7e652c",
+            "Value": {
+                "id": "e2a70376-39d9-40cb-b0f1-f742ed7ce742",
+                "resourcePath": "objects\\obj_Boss\\obj_Boss.yy",
                 "resourceType": "GMObject"
             }
         },
