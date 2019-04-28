@@ -1,0 +1,3 @@
+
+manaValue = 40;
+

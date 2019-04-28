@@ -1,5 +1,5 @@
 
-event_inherited()
+event_inherited();
 knockback_force_horizontal = 15
 
 playerSpeed = 10;
