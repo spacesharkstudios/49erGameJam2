@@ -1,2 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
+if(existance >= 10){
+	instance_destroy();
+}
+
+existance++;
+
+

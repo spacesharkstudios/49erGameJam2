@@ -15,3 +15,10 @@ enemySlimeCooldown = 0;
 specialAttactCooldown = 0;
 specialAttackCost = 15;
 countingN = 0;
+
+basicAttackDamage = 20;
+damageTaken = 0;
+shiftState = false;
+passiveCooldown = 0;
+
+earthBlock = false;

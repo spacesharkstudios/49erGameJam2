@@ -1,5 +1,15 @@
 
-horizontal = enemySpeed * moving
+if (stun) {
+	horizontal = 0
+	if (myStunDuration < 50) {
+		myStunDuration++
+	} else {
+		stun = false
+	}
+} else {
+	horizontal = enemySpeed * moving
+	stunCooldown++;
+}
 
 event_inherited()
 if (knockback != 0) {
@@ -8,7 +18,7 @@ if (knockback != 0) {
 
 x += horizontal
 
-if (HP <= 0) {
+if (HP <= 0 && instance_exists(obj_Players)) {
 	obj_Players.manaPoints = obj_Players.manaPoints + manaReward
 	instance_destroy();
 }

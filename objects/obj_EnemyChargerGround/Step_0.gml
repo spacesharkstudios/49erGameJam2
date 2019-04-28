@@ -4,6 +4,8 @@ var horizontal = move * enemySpeed;
 
 // Moves enemy towards player
 if (instance_exists(obj_Players)) {
+	if(!stun){
+	
 	// Am I close enough to stop moving and attack
 	if (distance_to_object(obj_Players) < 20) {
 		move = 0;
@@ -66,7 +68,20 @@ if (horizontal > 0) {
 } else if (horizontal < 0) {
 	image_xscale = -1;
 	facing = -1;
+	}
+	
+	stunCooldown++;
 }
+else{
+	
+	if(myStunDuration < 50){
+			myStunDuration++;
+	}
+	else{
+		stun = false;
+	}
+}
+	
 
 if (HP <= 0) {
 	obj_Players.manaPoints = obj_Players.manaPoints + manaReward;
