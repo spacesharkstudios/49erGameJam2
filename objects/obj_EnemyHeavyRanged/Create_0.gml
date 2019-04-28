@@ -9,6 +9,7 @@ damage = 10;
 manaReward = 40;
 finalStunDuration = 150;
 
+active = false;
 
 gotThere = false;
 attackCooldown = 20;

@@ -1,42 +1,46 @@
 
-if (stun) {
-	horizontal = 0
-	if (myStunDuration < 50) {
-		myStunDuration++
+if (active) {
+	if (stun) {
+		horizontal = 0
+		if (myStunDuration < 50) {
+			myStunDuration++
+		} else {
+			stun = false;
+			myStunDuration = 0;
+		}
 	} else {
-		stun = false;
-		myStunDuration = 0;
+		horizontal = enemySpeed * moving
+		stunCooldown++;
 	}
-} else {
-	horizontal = enemySpeed * moving
-	stunCooldown++;
-}
 
-event_inherited()
-if (knockback != 0) {
-	moving = sign(knockback)
-}
+	event_inherited()
+	if (knockback != 0) {
+		moving = sign(knockback)
+	}
 
-x += horizontal
+	x += horizontal
 
-// handles death
-if (HP <= 0 && instance_exists(obj_Players)) {
+	// handles death
+	if (HP <= 0 && instance_exists(obj_Players)) {
 	
-	if(obj_Players.manaPoints + manaReward > 100){
-		obj_Players.manaPoints = 100;
-	}
-	else{
-		obj_Players.manaPoints = obj_Players.manaPoints + manaReward;
-	}
+		if(obj_Players.manaPoints + manaReward > 100){
+			obj_Players.manaPoints = 100;
+		}
+		else{
+			obj_Players.manaPoints = obj_Players.manaPoints + manaReward;
+		}
 	
-	instance_destroy();
-}
+		instance_destroy();
+	}
 
-if (moving == 1) {
-	image_xscale = 1;
-} else {
-	image_xscale = -1;
-}
+	if (moving == 1) {
+		image_xscale = 1;
+	} else {
+		image_xscale = -1;
+	}
 
-attackCooldown++;
-damageCooldown++;
+	attackCooldown++;
+	damageCooldown++;
+} else if (instance_exists(obj_Players) && distance_to_object(obj_Players) < global.activeDistance) {
+	active = true;	
+}

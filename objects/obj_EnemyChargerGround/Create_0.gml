@@ -22,4 +22,4 @@ stunCooldown = 0;
 myStunDuration = 0;
 finalStunDuration = 150;
 
-
+active = false;

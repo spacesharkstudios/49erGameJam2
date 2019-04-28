@@ -21,6 +21,7 @@ input_left = 0;
 input_jump = false;
 move = 0;
 
+active = false;
 
 stun = false;
 damageCooldown = 0;

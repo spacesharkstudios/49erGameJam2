@@ -7,6 +7,7 @@ damage = 10;
 attackCooldown = 35;
 damageCooldown = 25;
 
+active = false;
 
 // multiplier on movement, 1 or -1
 moving = 1;
