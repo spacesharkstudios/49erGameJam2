@@ -51,22 +51,16 @@ if (horizontal > 0) {
 
 
 // state change
-if (input_change1) {
-	state = 1;
-	scr_PlayAudio(sfx_player_tran);
-} else if (input_change2) {
-	state = 2;
-	scr_PlayAudio(sfx_player_tran);
-} else if (input_change3) {
-	state = 3;
-	scr_PlayAudio(sfx_player_tran);
-} else if (input_change4) {
-	state = 4;
-	scr_PlayAudio(sfx_player_tran);
-}
+var targetState = state;
+if (input_change1) { targetState = 1; }
+if (input_change2) { targetState = 2; }
+if (input_change3) { targetState = 3; }
+if (input_change4) { targetState = 4; }
 
-
-if(input_change1 || input_change2 || input_change3 || input_change4){
+if (targetState != state && manaPoints >= transformationCost) {
+	state = targetState;
+	manaPoints -= transformationCost;
+	scr_PlayAudio(sfx_player_tran);
 	scr_Passives();
 }
 

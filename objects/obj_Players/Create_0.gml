@@ -24,3 +24,5 @@ shiftState = false;
 passiveCooldown = 0;
 
 earthBlock = false;
+
+transformationCost = 10;
