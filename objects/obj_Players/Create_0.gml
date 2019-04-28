@@ -11,9 +11,9 @@ facing = 1;
 basicAttackCooldown = 0;
 
 state = 2;
-healthPoints = 100000;
+healthPoints = 100;
 
-manaPoints = 10000000;
+manaPoints = 100;
 invincibility = 0;
 invincibilitySet = 50;
 specialAttactCooldown = 0;
@@ -27,6 +27,7 @@ passiveCooldown = 0;
 
 earthBlock = false;
 
-transformationCost = 10;
-transformCooldown = 20;
+transformationCost = 0;
+transformCooldown = 30;
 transformCooldownCounter = 0;
+doubleJumpCost = 5;
