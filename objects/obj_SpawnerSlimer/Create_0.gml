@@ -3,7 +3,7 @@ event_inherited();
 
 
 //stats
-HP = 2000;
+HP = 2;
 enemySpeed = 3;
 attackRate = 5;
 damage = 10;

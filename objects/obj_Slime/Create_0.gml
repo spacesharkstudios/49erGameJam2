@@ -2,7 +2,7 @@
 event_inherited();
 
 enemySpeed = 4;
-HP = 3000;
+HP = 3;
 
 damage = 10;
 attackCooldown = 35;
