@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "27e17720-5c0e-486e-a3ef-2260613358ca",
+            "Value": {
+                "id": "61f91123-be55-40e1-b452-af67d1ac57d3",
+                "resourcePath": "sprites\\spr_GunnerSlime_Bullet\\spr_GunnerSlime_Bullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "28d4c81c-75d1-4510-81d0-cdcee5134a37",
             "Value": {
                 "id": "cce11011-7673-44ba-9b4e-fb411f72fd5c",
@@ -356,6 +364,14 @@
                 "id": "02048351-e85d-4f73-b3f5-fd0738c2bfbe",
                 "resourcePath": "sounds\\sfx_boss_fire\\sfx_boss_fire.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "43833c98-4dfa-4e18-98d4-aa79918286e7",
+            "Value": {
+                "id": "9eb430b8-cb3e-4098-80ce-e26d8086cece",
+                "resourcePath": "views\\43833c98-4dfa-4e18-98d4-aa79918286e7.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -695,11 +711,27 @@
             }
         },
         {
+            "Key": "8d27c81a-e9ee-4ed1-841d-075f38f89d2a",
+            "Value": {
+                "id": "0d12d57e-f94c-47e2-a7f1-afd2a1d6fe0d",
+                "resourcePath": "views\\8d27c81a-e9ee-4ed1-841d-075f38f89d2a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8fae738f-880d-4686-8901-a0d84cc44741",
             "Value": {
                 "id": "08aea1a4-ebb2-4b95-a5f9-6cfa4c0f669d",
                 "resourcePath": "sounds\\sfx_boss_def\\sfx_boss_def.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "91651695-dec1-4ec1-829f-8be873025210",
+            "Value": {
+                "id": "38438b24-6345-4fba-b974-dd3f4a48a9d6",
+                "resourcePath": "sprites\\spr_Slimesooka_Move\\spr_Slimesooka_Move.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -775,6 +807,14 @@
             }
         },
         {
+            "Key": "a28bfebf-5d13-4571-9eaf-21805f5d746d",
+            "Value": {
+                "id": "e00028d8-2aef-487b-9bd4-aa667a4015d4",
+                "resourcePath": "sprites\\spr_GunnerSlime\\spr_GunnerSlime.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a5046040-19d7-4a9f-9ddc-7cd48c4a0618",
             "Value": {
                 "id": "19e11d8a-e37f-4062-b790-cca2ee61e3d2",
@@ -820,6 +860,14 @@
                 "id": "c3c01260-a912-42a1-b0dc-24c4ac4c75c2",
                 "resourcePath": "sounds\\bgm_boss\\bgm_boss.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "abd8143d-0538-4233-bf20-f7f87d791001",
+            "Value": {
+                "id": "46077e68-b646-4ff2-a351-afd6dc96b4e7",
+                "resourcePath": "sprites\\spr_Slimezooka_Projectile\\spr_Slimezooka_Projectile.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -983,6 +1031,14 @@
             }
         },
         {
+            "Key": "c76b8b5c-1797-48e5-acac-cfe0c71839e6",
+            "Value": {
+                "id": "3b42eff9-7516-42ed-a55a-5140c0b27d07",
+                "resourcePath": "sprites\\spr_Slimezooka_Attack\\spr_Slimezooka_Attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ca264ae9-0e3d-4e53-ada9-f07a6b7e652c",
             "Value": {
                 "id": "e2a70376-39d9-40cb-b0f1-f742ed7ce742",
@@ -1132,6 +1188,14 @@
                 "id": "a92f8fd1-7e54-4410-8ee7-b389dec078f8",
                 "resourcePath": "sounds\\sfx_conf\\sfx_conf.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "e3a000f5-3cde-4a54-bf3f-23b348b2a080",
+            "Value": {
+                "id": "1104a6cd-a7ab-4e3d-a656-46c9267c3e76",
+                "resourcePath": "sprites\\spr_Slimezooka_Idle\\spr_Slimezooka_Idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
