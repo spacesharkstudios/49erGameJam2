@@ -101,23 +101,15 @@ if (state == 1) {
 	} else {
 		sprite_index = spr_PlayerEarth_Idle;
 	}
-	
-	scr_PassivesCont();
-	
 } else {
 	specialAttackCost = 20;
 	if (jumped) {
 		sprite_index = spr_PlayerAir_Jump;
 	} else if (move != 0) {
 		sprite_index = spr_PlayerAir_Run;
-	} else if(attack){
-		sprite_index = spr_PlayerAir_Attack;
 	} else {
 		sprite_index = spr_PlayerAir_Idle;
 	}
-	
-	scr_PassivesCont();
-	
 }
 
 
@@ -170,6 +162,5 @@ if (healthPoints <= 0) {
 shiftState = false;
 specialAttactCooldown--;
 basicAttackCooldown--;
-enemyChargerCooldown++;
-enemySlimeCooldown++;
+invincibility++;
 passiveCooldown++;

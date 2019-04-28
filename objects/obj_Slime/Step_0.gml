@@ -19,8 +19,13 @@ if (active) {
 
 	x += horizontal
 
+	// handles death
 	if (HP <= 0 && instance_exists(obj_Players)) {
-		obj_Players.manaPoints = obj_Players.manaPoints + manaReward
+		if (obj_Players.manaPoints + manaReward > 100) {
+			obj_Players.manaPoints = 100;
+		} else {
+			obj_Players.manaPoints = obj_Players.manaPoints + manaReward;
+		}
 		instance_destroy();
 	}
 
