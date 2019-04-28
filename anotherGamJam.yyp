@@ -191,6 +191,22 @@
             }
         },
         {
+            "Key": "1d33db17-0d21-4f11-8c77-bfa5503c4982",
+            "Value": {
+                "id": "0431feb5-6c64-4b02-9a1f-6169701fc8b7",
+                "resourcePath": "sprites\\spr_pillar\\spr_pillar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1e2ac38f-2294-4672-8340-84e93d301448",
+            "Value": {
+                "id": "52c306fd-c540-4391-ae29-1488df50192c",
+                "resourcePath": "objects\\obj_level_manager\\obj_level_manager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1a6901bf-4a6f-4d41-aae4-c8ab9dd0569a",
             "Value": {
                 "id": "ebdd48eb-ea7d-495c-8c5a-b82866264bb1",
@@ -284,6 +300,14 @@
                 "id": "c1128310-767e-43fc-83be-44a4c7b328b7",
                 "resourcePath": "scripts\\scr_SpecialAttack\\scr_SpecialAttack.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3463b02d-48f3-46e3-802a-546a4eece5d4",
+            "Value": {
+                "id": "e2e04cfd-b54b-424e-bca2-af968e1d655c",
+                "resourcePath": "sprites\\spr_TileMap_Basic\\spr_TileMap_Basic.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -468,6 +492,14 @@
                 "id": "41b66216-a869-4fd3-8d06-2a13d6a671d5",
                 "resourcePath": "sprites\\spr_PlayerFire_Run\\spr_PlayerFire_Run.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "60a89dcb-d323-454e-9674-2b68fc989523",
+            "Value": {
+                "id": "e9e05db7-a5c7-4ebc-aa20-7077b70b85bc",
+                "resourcePath": "objects\\object21\\object21.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -948,6 +980,14 @@
                 "id": "889eddb3-b02b-4b86-ae9a-fe52b05b5dea",
                 "resourcePath": "views\\c1ff15ba-1ee0-40c0-9761-6d165633b26f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c40ef6e4-489b-4699-ac9e-6b7dc7a38721",
+            "Value": {
+                "id": "30f84a93-41ae-4bea-9a84-084d6774659b",
+                "resourcePath": "tilesets\\til_Terrain_Basic\\til_Terrain_Basic.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
