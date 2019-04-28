@@ -2,33 +2,29 @@
 
 
 if (instance_exists(obj_Players)) {
+	obj_Players.doubleJump = (obj_Players.state == 4);
+	obj_Players.earthBlock = (obj_Players.state == 3);
 	
 	if(obj_Players.state == 1){
 		
 		obj_Players.basicAttackDamage = 30;
 		obj_Players.playerSpeed = 10;
 		obj_Players.object_gravity = 2;
-		obj_Players.earthBlock = false;
 	}
 	else if(obj_Players.state == 2){
 		obj_Players.basicAttackDamage = 20;
 		obj_Players.playerSpeed = 10;
 		obj_Players.object_gravity = 2;
-		obj_Players.earthBlock = false;
-		
 	}
 	else if(obj_Players.state == 3){
 		obj_Players.basicAttackDamage = 20;
-		obj_Players.playerSpeed = 10;
-		obj_Players.object_gravity = 2;
-		obj_Players.earthBlock = true;
-		
+		obj_Players.playerSpeed = 9;
+		obj_Players.object_gravity = 2.1;
 	}
 	else{
 		obj_Players.basicAttackDamage = 20;
 		obj_Players.playerSpeed = 15;
-		obj_Players.object_gravity = 1;
-		obj_Players.earthBlock = false;
+		obj_Players.object_gravity = 1.6;
 	}
 	
 }

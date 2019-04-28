@@ -4,6 +4,8 @@ knockback_force_horizontal = 15
 
 playerSpeed = 10;
 jumped = false;
+doubleJump = false;
+hasDoubleJump = false;
 
 facing = 1;
 basicAttackCooldown = 0;

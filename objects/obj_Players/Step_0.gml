@@ -25,10 +25,19 @@ if (place_meeting(x + horizontal, y, obj_Wall)) {
 }
 
 // jumping
-if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {
+var onGround = place_meeting(x, y + 1, obj_Wall);
+if (!doubleJump) {
+	hasDoubleJump = false;
+} else if (onGround) {
+	hasDoubleJump = true;
+}
+if (input_jump && (onGround || hasDoubleJump)) {
 	scr_PlayAudio(sfx_player_jump);
 	vertical = -30;
 	jumped = true;
+	if (!onGround && hasDoubleJump) {
+		hasDoubleJump = false;
+	}
 }
 
 // sprite facing
