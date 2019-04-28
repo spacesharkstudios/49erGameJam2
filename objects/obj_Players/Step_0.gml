@@ -42,10 +42,10 @@ if (input_jump && (onGround || (hasDoubleJump && manaPoints >= doubleJumpCost)))
 }
 
 // sprite facing
-if (horizontal > 0) {
+if (move > 0) {
 	image_xscale = 1;
 	facing = 1;
-} else if (horizontal < 0) {
+} else if (move < 0) {
 	image_xscale = -1;
 	facing = -1;
 }
