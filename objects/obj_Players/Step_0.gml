@@ -144,9 +144,10 @@ if (healthPoints <= 20) {
 }
 
 if (healthLoop = true) {
-	if (countingN%20 = 0) {
+	if (countingN%30 == 0) {
 		scr_PlayAudio(sfx_player_low)
 	}
+	countingN++
 }
 
 
