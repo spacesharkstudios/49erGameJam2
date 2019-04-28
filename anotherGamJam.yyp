@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "52f013c7-abea-47e8-b271-94f45cb66c8e",
+            "Value": {
+                "id": "817051a7-219a-4f05-af3a-133b2c5a4ad0",
+                "resourcePath": "objects\\obj_CheatEasterEgg\\obj_CheatEasterEgg.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "535bf4f6-03c3-4229-947c-aece30055028",
             "Value": {
                 "id": "939c88b7-6c4f-4ec8-8b04-60d35b8e6108",
