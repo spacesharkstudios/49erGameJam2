@@ -2,11 +2,11 @@
 event_inherited();
 
 //stats
-HP = 2000;
+HP = 40;
 enemySpeed = 5;
 attackRate = 6;
-damage = 50;
-manaReward = 80;
+damage = 10;
+manaReward = 60;
 finalStunDuration = 150;
 
 

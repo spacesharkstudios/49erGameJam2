@@ -1,8 +1,8 @@
 
 event_inherited();
 
-HP = 3000;
-enemySpeed = 3;
+HP = 40;
+enemySpeed = 5;
 gotThere = false;
 attackCooldown = 35
 damageCooldown = 25;
@@ -14,7 +14,7 @@ input_left = 0;
 input_jump = false;
 move = 0;
 
-manaReward = 100;
+manaReward = 50;
 
 stun = false;
 damageCooldown = 0;
