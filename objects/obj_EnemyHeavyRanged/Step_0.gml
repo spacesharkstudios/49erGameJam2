@@ -5,6 +5,7 @@ var horizontal = move * enemySpeed;
 // Moves enemy towards player
 if (instance_exists(obj_Players)) {
 	if(!stun){
+		stunCooldown++;
 	
 	// Am I close enough to stop moving and attack
 	if (distance_to_object(obj_Players) < 400) {
@@ -40,7 +41,7 @@ if (instance_exists(obj_Players)) {
 	}
 	
 	// Attacks player
-	if ((gotThere) && (attackCooldown >= 80)) {
+	if ((gotThere) && (attackCooldown >= attackRate)) {
 		if(x > obj_Players.x){
 			instance_create_layer(x, y, "instances", obj_EnemyHeavyRangedAttack);
 		} else {
@@ -49,6 +50,18 @@ if (instance_exists(obj_Players)) {
 		attackCooldown = 0;
 	}
 }
+else{
+	
+	if (myStunDuration < finalStunDuration) {
+		move = 0;
+		gotThere = false;
+			myStunDuration++
+		} else {
+			stun = false;
+			myStunDuration = 0;
+		}
+}
+
 
 // falling & knockback physics
 event_inherited()
@@ -63,12 +76,6 @@ if (place_meeting(x + horizontal, y, obj_Wall)) {
 	x += horizontal;
 }
 
-// jumping
-if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {
-	vertical = -20;
-	jumped = true;
-}
-
 // sprite facing
 if (horizontal > 0) {
 	image_xscale = 1;
@@ -78,16 +85,6 @@ if (horizontal > 0) {
 	facing = -1;
 	}
 	
-	stunCooldown++;
-}
-else{
-	
-	if(myStunDuration < 50){
-			myStunDuration++;
-	}
-	else{
-		stun = false;
-	}
 }
 	
 // handles death

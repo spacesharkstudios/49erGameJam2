@@ -5,6 +5,8 @@ var horizontal = move * enemySpeed;
 // Moves enemy towards player
 if (instance_exists(obj_Players)) {
 	if(!stun){
+		sprite_index = spr_SlimeCharger_FullAssSprint;
+		stunCooldown++;
 	
 	// Am I close enough to stop moving and attack
 	if (distance_to_object(obj_Players) < 20) {
@@ -16,19 +18,14 @@ if (instance_exists(obj_Players)) {
 		input_right = 0;
 		move = input_right - input_left;
 		gotThere = false;
+		
 	// Should I move right
 	} else if (x < obj_Players.x) {
 		input_right = 1;
 		input_left = 0;
 		move = input_right - input_left;
 		gotThere = false;
-	}
-	
-	// Should I jump
-	if (y > (obj_Players.y + 50)) {
-		input_jump = true;
-	} else {
-		input_jump = false;
+		
 	}
 	
 	// Attacks player
@@ -41,6 +38,18 @@ if (instance_exists(obj_Players)) {
 		attackCooldown = 0;
 	}
 }
+else{
+	sprite_index = spr_SlimeCharger_Idle;
+	if (myStunDuration < finalStunDuration) {
+		move = 0;
+		gotThere = false;
+			myStunDuration++
+		} else {
+			stun = false;
+			myStunDuration = 0;
+		}
+}
+
 
 // falling & knockback physics
 event_inherited();

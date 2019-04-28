@@ -1,24 +1,29 @@
 
 event_inherited();
 
-enemySpeed = 6;
+
+//stats
+HP = 2000;
+enemySpeed = 3;
+attackRate = 5;
+damage = 10;
+manaReward = 40;
+finalStunDuration = 150;
+
+
+
 gotThere = false;
-HP = 1;
 attackCooldown = 35
 damageCooldown = 25;
 
 facing = 1;
 
-damage = 10;
 input_right = 0;
 input_left = 0;
 input_jump = false;
 move = 0;
 object_gravity = 0;
 
-manaReward = 5
-
 stun = false;
-damageCooldown = 0;
 stunCooldown = 0;
 myStunDuration = 0;

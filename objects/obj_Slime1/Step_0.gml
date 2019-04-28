@@ -4,7 +4,8 @@ if (stun) {
 	if (myStunDuration < 50) {
 		myStunDuration++
 	} else {
-		stun = false
+		stun = false;
+		myStunDuration = 0;
 	}
 } else {
 	horizontal = enemySpeed * moving

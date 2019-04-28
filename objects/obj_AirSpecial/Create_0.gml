@@ -1,3 +1,3 @@
 manaCost = 20;
-damage = 45;
+damage = 35;
 existance = 0;

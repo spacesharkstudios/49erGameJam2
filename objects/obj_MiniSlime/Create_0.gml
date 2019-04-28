@@ -21,3 +21,4 @@ stun = false;
 damageCooldown = 0;
 stunCooldown = 0;
 myStunDuration = 0;
+finalStunDuration = 150;

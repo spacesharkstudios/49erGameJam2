@@ -41,7 +41,7 @@ if (instance_exists(obj_Players)) {
 	}
 	
 	// Attacks player
-	if ((gotThere) && (attackCooldown >= 6)) {
+	if ((gotThere) && (attackCooldown >= attackRate)) {
 		if(x > obj_Players.x){
 			instance_create_layer(x, y, "instances", obj_EnemyLightRangedAttack);
 		} else {
@@ -51,10 +51,7 @@ if (instance_exists(obj_Players)) {
 	}
 	
 	// falling & knockback physics
-event_inherited();
-	if (knockback != 0) {
-		moving = sign(knockback);
-	}
+
 	
 
 // horizontal movement
@@ -85,13 +82,20 @@ if (horizontal > 0) {
 }
 else{
 	
-	if(myStunDuration < 50){
-			myStunDuration++;
-	}
-	else{
-		stun = false;
-	}
+	if (myStunDuration < finalStunDuration) {
+		move = 0;
+		gotThere = false;
+			myStunDuration++
+		} else {
+			stun = false;
+			myStunDuration = 0;
+		}
 }
+
+event_inherited();
+	if (knockback != 0) {
+		moving = sign(knockback);
+	}
 
 }
 	

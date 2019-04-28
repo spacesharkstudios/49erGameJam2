@@ -1,9 +1,9 @@
 
 event_inherited();
 
-enemySpeed = 6;
+HP = 3000;
+enemySpeed = 3;
 gotThere = false;
-HP = 40;
 attackCooldown = 35
 damageCooldown = 25;
 
@@ -20,3 +20,6 @@ stun = false;
 damageCooldown = 0;
 stunCooldown = 0;
 myStunDuration = 0;
+finalStunDuration = 150;
+
+

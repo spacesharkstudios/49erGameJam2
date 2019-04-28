@@ -26,10 +26,21 @@ if (instance_exists(obj_Players)) {
 	}
 	
 	// Attacks player
-	if ((gotThere) && (attackCooldown >= 80)) {
+	if ((gotThere) && (attackCooldown >= attackRate)) {
 		instance_create_layer(x, y + 12, "instances", obj_MiniSlime);
 		attackCooldown = 0;   
 	}
+}
+else{
+	
+	if (myStunDuration < finalStunDuration) {
+		move = 0;
+		gotThere = false;
+			myStunDuration++
+		} else {
+			stun = false;
+			myStunDuration = 0;
+		}
 }
 
 // falling & knockback physics

@@ -2,7 +2,7 @@
 event_inherited();
 
 enemySpeed = 4;
-HP = 50
+HP = 3000;
 
 damage = 10;
 attackCooldown = 35;
@@ -16,3 +16,4 @@ manaReward = 5;
 stun = false;
 stunCooldown = 0;
 myStunDuration = 0;
+finalmyStunDuration = 150;

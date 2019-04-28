@@ -2,10 +2,12 @@
 if (active) {
 	if (stun) {
 		horizontal = 0
-		if (myStunDuration < 50) {
+		
+		if (myStunDuration < finalmyStunDuration) {
 			myStunDuration++
 		} else {
-			stun = false
+			stun = false;
+			myStunDuration = 0;
 		}
 	} else {
 		horizontal = enemySpeed * moving

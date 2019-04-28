@@ -6,4 +6,5 @@ if(other.damageCooldown >= 15){
 
 if(other.stunCooldown >= 100){
 	other.stun = true;
+	other.stunCooldown = 0;
 }
