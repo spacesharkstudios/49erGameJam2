@@ -57,9 +57,12 @@ if (input_change2) { targetState = 2; }
 if (input_change3) { targetState = 3; }
 if (input_change4) { targetState = 4; }
 
-if (targetState != state && manaPoints >= transformationCost) {
+if (transformCooldownCounter > 0) {
+	transformCooldownCounter--;
+} else if (targetState != state && manaPoints >= transformationCost) {
 	state = targetState;
 	manaPoints -= transformationCost;
+	transformCooldownCounter = transformCooldown;
 	scr_PlayAudio(sfx_player_tran);
 	scr_Passives();
 }
