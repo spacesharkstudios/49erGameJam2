@@ -424,6 +424,28 @@ else if(obj_Players.healthPoints >= 5){
 	instance17.visible = false;
 	instance18.visible = false;
 	instance19.visible = false;
-}
+	
+	}
 
+}
+else{
+	instance1.visible = false;
+	instance2.visible = false;
+	instance3.visible = false;
+	instance4.visible = false;
+	instance5.visible = false;
+	instance6.visible = false;
+	instance7.visible = false;
+	instance8.visible = false;
+	instance9.visible = false;
+	instance10.visible = false;
+	instance11.visible = false;
+	instance12.visible = false;
+	instance13.visible = false;
+	instance14.visible = false;
+	instance15.visible = false;
+	instance16.visible = false;
+	instance17.visible = false;
+	instance18.visible = false;
+	instance19.visible = false;
 }

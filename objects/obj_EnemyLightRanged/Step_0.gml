@@ -32,11 +32,11 @@ if (instance_exists(obj_Players)) {
 	}
 	
 	// Attacks player
-	if ((gotThere) && (attackCooldown >= 80)) {
+	if ((gotThere) && (attackCooldown >= 6)) {
 		if(x > obj_Players.x){
-			instance_create_layer(x, y, "instances", obj_EnemyHeavyRangedAttack);
+			instance_create_layer(x, y, "instances", obj_EnemyLightRangedAttack);
 		} else {
-			instance_create_layer(x, y, "instances", obj_EnemyHeavyRangedAttack);
+			instance_create_layer(x, y, "instances", obj_EnemyLightRangedAttack);
 		}
 		attackCooldown = 0;
 	}

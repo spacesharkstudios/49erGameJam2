@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "82c3a0d6-49ff-4912-9494-bbbfe5ca580b",
+            "Value": {
+                "id": "43b6a319-2784-4fc8-a734-b2ea82fbc7d7",
+                "resourcePath": "sprites\\spr_PlayerAir_LightningEffect\\spr_PlayerAir_LightningEffect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8ad7bdbe-8ad7-4999-badb-d0a2169b0e25",
             "Value": {
                 "id": "43edf35d-2c65-4c54-a677-2c2bb440756d",
@@ -732,6 +740,14 @@
                 "id": "12ea8e01-f18f-4a0f-8ed3-29bc5ae52ba5",
                 "resourcePath": "sounds\\sfx_enem_heli\\sfx_enem_heli.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "a5046040-19d7-4a9f-9ddc-7cd48c4a0618",
+            "Value": {
+                "id": "19e11d8a-e37f-4062-b790-cca2ee61e3d2",
+                "resourcePath": "sprites\\spr_EnemyLightRange\\spr_EnemyLightRange.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -959,6 +975,14 @@
             }
         },
         {
+            "Key": "cfc43bd2-f9e9-4bde-8526-9507efecf169",
+            "Value": {
+                "id": "cedfcc83-c0d4-4064-8856-de0d9c677275",
+                "resourcePath": "objects\\obj_EnemyLightRangedAttack\\obj_EnemyLightRangedAttack.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d079f081-fa48-45f3-809c-76ee4582cfe3",
             "Value": {
                 "id": "a7a6c705-9124-46a4-bb2d-14c92bf2fc53",
@@ -1111,14 +1135,6 @@
             }
         },
         {
-            "Key": "f8bd4e71-18c9-4075-a798-ac3a3d9127e3",
-            "Value": {
-                "id": "a8e22136-b253-4760-bd81-91a6595009ca",
-                "resourcePath": "objects\\obj_EnemyCharger\\obj_EnemyCharger.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "f9750322-5d45-43e1-b66f-fed07f2c4cab",
             "Value": {
                 "id": "8c0b9b5a-894f-4e41-934f-092d53d264a4",
@@ -1180,6 +1196,14 @@
                 "id": "73f429e9-a88c-4b1c-a6b5-2c0a3a69fd8e",
                 "resourcePath": "views\\fd3d8772-6deb-467d-bd93-f6fe39259128.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ff5e2f2a-a80a-4fea-a8f8-0e3beef9fcde",
+            "Value": {
+                "id": "c30a1c0b-fa4e-4036-85bc-c8d07316f53e",
+                "resourcePath": "objects\\obj_EnemyLightRanged\\obj_EnemyLightRanged.yy",
+                "resourceType": "GMObject"
             }
         },
         {

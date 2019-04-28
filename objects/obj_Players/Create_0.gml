@@ -9,8 +9,10 @@ hasDoubleJump = false;
 
 facing = 1;
 basicAttackCooldown = 0;
+
 state = 2;
 healthPoints = 100;
+
 manaPoints = 100;
 invincibility = 0;
 invincibilitySet = 50;

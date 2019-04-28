@@ -1,5 +1,5 @@
 existance++;
 
-if(existance > 5){
+if(existance > 10){
 	instance_destroy();
 }

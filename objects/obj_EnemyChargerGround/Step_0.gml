@@ -63,10 +63,10 @@ if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {
 
 // sprite facing
 if (horizontal > 0) {
-	image_xscale = 1;
+	image_xscale = -1;
 	facing = 1;
 } else if (horizontal < 0) {
-	image_xscale = -1;
+	image_xscale = 1;
 	facing = -1;
 	}
 	
