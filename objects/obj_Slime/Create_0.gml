@@ -1,5 +1,5 @@
 
-event_inherited()
+event_inherited();
 
 enemySpeed = 4;
 HP = 50

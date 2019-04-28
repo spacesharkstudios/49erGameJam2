@@ -1,5 +1,5 @@
 
-event_inherited()
+event_inherited();
 
 enemySpeed = 6;
 gotThere = false;

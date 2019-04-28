@@ -24,6 +24,14 @@ if (instance_exists(obj_Players)) {
 		gotThere = false;
 	}
 	
+	
+	if(x > obj_Players.x){
+		facing = -1;
+	}
+	else if(x < obj_Players.x){
+		facing = 1;
+	}
+	
 	// Should I jump
 	if (y > (obj_Players.y + 50)) {
 		input_jump = true;

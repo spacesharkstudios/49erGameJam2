@@ -24,6 +24,15 @@ if (instance_exists(obj_Players)) {
 		gotThere = false;
 	}
 	
+	
+	if(x > obj_Players.x){
+		facing = -1;
+	}
+	else if(x < obj_Players.x){
+		facing = 1;
+	}
+	
+	
 	// Should I jump
 	if (y > (obj_Players.y + 50)) {
 		input_jump = true;
@@ -40,10 +49,13 @@ if (instance_exists(obj_Players)) {
 		}
 		attackCooldown = 0;
 	}
-}
-
-// falling & knockback physics
-event_inherited()
+	
+	// falling & knockback physics
+event_inherited();
+	if (knockback != 0) {
+		moving = sign(knockback);
+	}
+	
 
 // horizontal movement
 if (place_meeting(x + horizontal, y, obj_Wall)) {
@@ -70,7 +82,6 @@ if (horizontal > 0) {
 	facing = -1;
 	}
 	
-	stunCooldown++;
 }
 else{
 	
@@ -80,6 +91,8 @@ else{
 	else{
 		stun = false;
 	}
+}
+
 }
 	
 // handles death
@@ -95,5 +108,7 @@ if (HP <= 0 && instance_exists(obj_Players)) {
 	instance_destroy();
 }
 
+
+stunCooldown++;
 attackCooldown++;
 damageCooldown++;

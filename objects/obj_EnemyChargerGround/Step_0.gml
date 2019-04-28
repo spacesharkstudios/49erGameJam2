@@ -43,7 +43,10 @@ if (instance_exists(obj_Players)) {
 }
 
 // falling & knockback physics
-event_inherited()
+event_inherited();
+	if (knockback != 0) {
+		moving = sign(knockback)
+	}
 
 // horizontal movement
 if (place_meeting(x + horizontal, y, obj_Wall)) {
