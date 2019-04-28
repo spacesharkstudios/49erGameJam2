@@ -1,0 +1,2 @@
+
+healValue = 40;

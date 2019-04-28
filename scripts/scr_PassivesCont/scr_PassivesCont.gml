@@ -14,7 +14,7 @@ if (instance_exists(obj_Players)) {
 	}
 	else if((obj_Players.state == 2) && (obj_Players.healthPoints < 100)){
 		
-		if(passiveCooldown >= 10 ){
+		if(passiveCooldown >= 20 ){
 			healthPoints = healthPoints + 1;
 			passiveCooldown = 0;
 		}

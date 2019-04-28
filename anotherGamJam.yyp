@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "09eb7492-3a31-46fe-b5b4-bddd64720cb2",
+            "Value": {
+                "id": "46cb9ffe-31e4-4ed2-b286-0607d04afd04",
+                "resourcePath": "objects\\obj_ManaPotion\\obj_ManaPotion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0abe3b6c-c90e-49cc-a9ae-d8a27524fa20",
             "Value": {
                 "id": "360fdd13-c67f-41c0-8ba4-2530063b2625",
@@ -84,6 +92,14 @@
                 "id": "d0496d78-f73e-4e04-869b-ea89b94eb99d",
                 "resourcePath": "sprites\\spr_PlayerFire_Jump\\spr_PlayerFire_Jump.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0c66b1b3-fc7b-4b25-aa00-6192015a66e8",
+            "Value": {
+                "id": "68276153-4ceb-49aa-a884-86c0bcce9a7f",
+                "resourcePath": "objects\\obj_HealthPotion\\obj_HealthPotion.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -380,6 +396,14 @@
                 "id": "9920d4e1-cf26-4b4e-b21d-a8cc30e514a2",
                 "resourcePath": "sounds\\sfx_spec_heal\\sfx_spec_heal.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "584ccadd-9e9b-47f2-8262-5b7877cbcb6d",
+            "Value": {
+                "id": "3d6ccde7-2ba2-40d2-bb46-f93dcf9213ea",
+                "resourcePath": "sprites\\spr_ManaPotion\\spr_ManaPotion.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -948,6 +972,14 @@
                 "id": "0e55e9ff-077c-4e73-8a8a-eb8273cd1aab",
                 "resourcePath": "objects\\obj_EnemyChargerGround\\obj_EnemyChargerGround.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e175677c-6945-4329-b36a-292f24a0bfc6",
+            "Value": {
+                "id": "7a2b318b-bd72-4fd3-b76c-f398979e6c1c",
+                "resourcePath": "sprites\\spr_healthPotion\\spr_healthPotion.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

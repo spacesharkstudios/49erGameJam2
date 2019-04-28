@@ -3,7 +3,7 @@ if(instance_exists(obj_Players)){
 	y = (obj_Players.y - 350);
 	
 
-if(obj_Players.healthPoints == 100){
+if(obj_Players.healthPoints >= 100){
 	instance1.visible = true;
 	instance2.visible = true;
 	instance3.visible = true;
@@ -24,7 +24,7 @@ if(obj_Players.healthPoints == 100){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 95){
+else if(obj_Players.healthPoints >= 95){
 	instance1.visible = false;
 	instance2.visible = true;
 	instance3.visible = true;
@@ -45,7 +45,7 @@ if(obj_Players.healthPoints == 95){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 90){
+else if(obj_Players.healthPoints >= 90){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = true;
@@ -66,7 +66,7 @@ if(obj_Players.healthPoints == 90){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 85){
+else if(obj_Players.healthPoints >= 85){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -87,7 +87,7 @@ if(obj_Players.healthPoints == 85){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 80){
+else if(obj_Players.healthPoints >= 80){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -108,7 +108,7 @@ if(obj_Players.healthPoints == 80){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 75){
+else if(obj_Players.healthPoints >= 75){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -130,7 +130,7 @@ if(obj_Players.healthPoints == 75){
 	instance19.visible = true;
 
 }
-if(obj_Players.healthPoints == 70){
+else if(obj_Players.healthPoints >= 70){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -151,7 +151,7 @@ if(obj_Players.healthPoints == 70){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 65){
+else if(obj_Players.healthPoints >= 65){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -172,7 +172,7 @@ if(obj_Players.healthPoints == 65){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 60){
+else if(obj_Players.healthPoints >= 60){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -193,7 +193,7 @@ if(obj_Players.healthPoints == 60){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 55){
+else if(obj_Players.healthPoints >= 55){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -214,7 +214,7 @@ if(obj_Players.healthPoints == 55){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 50){
+else if(obj_Players.healthPoints >= 50){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -235,7 +235,7 @@ if(obj_Players.healthPoints == 50){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 45){
+else if(obj_Players.healthPoints >= 45){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -256,7 +256,7 @@ if(obj_Players.healthPoints == 45){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 40){
+else if(obj_Players.healthPoints >= 40){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -277,7 +277,7 @@ if(obj_Players.healthPoints == 40){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 35){
+else if(obj_Players.healthPoints >= 35){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -299,7 +299,7 @@ if(obj_Players.healthPoints == 35){
 	instance19.visible = true;
 
 }
-if(obj_Players.healthPoints == 30){
+else if(obj_Players.healthPoints >= 30){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -320,7 +320,7 @@ if(obj_Players.healthPoints == 30){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 25){
+else if(obj_Players.healthPoints >= 25){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -341,7 +341,7 @@ if(obj_Players.healthPoints == 25){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 20){
+else if(obj_Players.healthPoints >= 20){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -362,7 +362,7 @@ if(obj_Players.healthPoints == 20){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 15){
+else if(obj_Players.healthPoints >= 15){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -383,7 +383,7 @@ if(obj_Players.healthPoints == 15){
 	instance18.visible = true;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 10){
+else if(obj_Players.healthPoints >= 10){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
@@ -404,7 +404,7 @@ if(obj_Players.healthPoints == 10){
 	instance18.visible = false;
 	instance19.visible = true;
 }
-if(obj_Players.healthPoints == 5){
+else if(obj_Players.healthPoints >= 5){
 	instance1.visible = false;
 	instance2.visible = false;
 	instance3.visible = false;
