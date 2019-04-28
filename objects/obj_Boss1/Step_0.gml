@@ -5,11 +5,10 @@ var horizontal = move * enemySpeed;
 // Moves enemy towards player
 if (instance_exists(obj_Players)) {
 	if(!stun){
-		sprite_index = spr_SlimeCharger_FullAssSprint;
 		stunCooldown++;
 	
 	// Am I close enough to stop moving and attack
-	if (distance_to_object(obj_Players) < 20) {
+	if (distance_to_object(obj_Players) < 400) {
 		move = 0;
 		gotThere = true;
 	// Should I move left
@@ -18,33 +17,49 @@ if (instance_exists(obj_Players)) {
 		input_right = 0;
 		move = input_right - input_left;
 		gotThere = false;
-		
 	// Should I move right
 	} else if (x < obj_Players.x) {
 		input_right = 1;
 		input_left = 0;
 		move = input_right - input_left;
 		gotThere = false;
-		
+	}
+	
+	
+	if(x > obj_Players.x){
+		facing = -1;
+	}
+	else if(x < obj_Players.x){
+		facing = 1;
+	}
+	
+	// Should I jump
+	if (y > (obj_Players.y + 50)) {
+		input_jump = true;
+	} else {
+		input_jump = false;
 	}
 	
 	// Attacks player
 	if (gotThere) {
-		if(x > obj_Players.x){
-			instance_create_layer(x - 64, y, "instances", obj_EnemyChargerAttack);
+		
+		scr_BossAttack();
+}
+else{
+	
+	if (myStunDuration < finalStunDuration) {
+		move = 0;
+		gotThere = false;
+			myStunDuration++
 		} else {
-			instance_create_layer(x + 64, y, "instances", obj_EnemyChargerAttack);
+			stun = false;
+			myStunDuration = 0;
 		}
-		attackCooldown = 0;
-	}
 }
 
 
 // falling & knockback physics
-event_inherited();
-	if (knockback != 0) {
-		moving = sign(knockback)
-	}
+event_inherited()
 
 // horizontal movement
 if (place_meeting(x + horizontal, y, obj_Wall)) {
@@ -56,25 +71,17 @@ if (place_meeting(x + horizontal, y, obj_Wall)) {
 	x += horizontal;
 }
 
-// jumping
-if (place_meeting(x, y + 1, obj_Wall) && (input_jump)) {
-	vertical = -30;
-	jumped = true;
-}
-
 // sprite facing
 if (horizontal > 0) {
-	image_xscale = -1;
+	image_xscale = 1;
 	facing = 1;
 } else if (horizontal < 0) {
-	image_xscale = 1;
+	image_xscale = -1;
 	facing = -1;
 	}
 	
-	
 }
 	
-
 // handles death
 if (HP <= 0 && instance_exists(obj_Players)) {
 	
@@ -88,5 +95,14 @@ if (HP <= 0 && instance_exists(obj_Players)) {
 	instance_destroy();
 }
 
-attackCooldown++;
+
+if(HP <= (HP / 2)){
+	state = 2;
+}
+
 damageCooldown++;
+lightAttackCounter++;
+bigAttackCounter++;
+summonSlimesCounter++;
+attackStateCounter++;
+}

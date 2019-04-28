@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "188387f9-c0f2-4af7-bcf9-3020f7fd3312",
+            "Value": {
+                "id": "bf9f14e6-9207-4858-b4ad-c2d71397e320",
+                "resourcePath": "objects\\obj_Boss1\\obj_Boss1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "18fadca0-054e-4f8c-85c5-5fb4f2f7a118",
             "Value": {
                 "id": "ebfffcee-d9cb-4d99-9754-dee6739a2da7",
@@ -615,6 +623,14 @@
             }
         },
         {
+            "Key": "7814937c-0784-43b7-8292-227dab6826ef",
+            "Value": {
+                "id": "a686f617-81e3-48b9-84f5-e7acc5559123",
+                "resourcePath": "sprites\\spr_PlayerFire_FireBall2\\spr_PlayerFire_FireBall2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "79b21a71-afe3-4563-a356-b0adaf291184",
             "Value": {
                 "id": "d28af6fd-d86b-456a-853e-75182c36d6ad",
@@ -684,6 +700,14 @@
                 "id": "08aea1a4-ebb2-4b95-a5f9-6cfa4c0f669d",
                 "resourcePath": "sounds\\sfx_boss_def\\sfx_boss_def.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "8fd5685b-313c-4e44-be74-f2ed3547b20f",
+            "Value": {
+                "id": "dbb8e45b-8cc2-407f-bc2f-5239cb117bf6",
+                "resourcePath": "objects\\obj_Meteor\\obj_Meteor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -975,14 +999,6 @@
             }
         },
         {
-            "Key": "ca264ae9-0e3d-4e53-ada9-f07a6b7e652c",
-            "Value": {
-                "id": "e2a70376-39d9-40cb-b0f1-f742ed7ce742",
-                "resourcePath": "objects\\obj_Boss\\obj_Boss.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "cb4b56cd-3ce6-4d7a-960b-de59302c41c1",
             "Value": {
                 "id": "fdf68f99-9d16-4717-972d-0f07d596e49e",
@@ -1116,6 +1132,14 @@
                 "id": "d5bd53e4-54da-4997-9494-88f7b289cee9",
                 "resourcePath": "rooms\\TestRoom\\TestRoom.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "e25fa086-4a08-4d37-8fb9-2bb2315157e5",
+            "Value": {
+                "id": "e338213f-2209-44b9-97b3-17b0252b2473",
+                "resourcePath": "scripts\\scr_BossAttack\\scr_BossAttack.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1284,7 +1308,8 @@
         "ae97d2f0-4152-4b87-a84a-88856b9b1866",
         "bc5479d4-fb1c-424a-b4f8-f79118aaeea9",
         "5c09b9fd-b237-4a2c-9145-47e23943ee72",
-        "abdd3b23-3306-473e-b32a-4632a22d08ba"
+        "abdd3b23-3306-473e-b32a-4632a22d08ba",
+        "e25fa086-4a08-4d37-8fb9-2bb2315157e5"
     ],
     "tutorial": ""
 }

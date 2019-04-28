@@ -15,7 +15,7 @@ input_left = 0;
 input_jump = false;
 move = 0;
 
-manaReward = 5
+manaReward = 10;
 
 stun = false;
 damageCooldown = 0;
