@@ -9,7 +9,7 @@ hasDoubleJump = false;
 
 facing = 1;
 basicAttackCooldown = 0;
-state = 1;
+state = 2;
 healthPoints = 100;
 manaPoints = 100;
 enemyChargerCooldown = 0;
