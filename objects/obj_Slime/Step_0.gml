@@ -22,12 +22,6 @@ else{
 			stun = false;
 		}
 	}
-
-
-
-
-
-
-
-
 }
+
+damageCooldown++;

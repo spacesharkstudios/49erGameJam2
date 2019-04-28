@@ -47,6 +47,7 @@ if (horizontal > 0) {
 	facing = -1;
 }
 
+
 // state change
 if (input_change1) {
 	state = 1;
@@ -58,7 +59,12 @@ if (input_change1) {
 	state = 4;
 }
 
-// handles animations
+
+if(input_change1 || input_change2 || input_change3 || input_change4){
+	scr_Passives();
+}
+
+// handles animations and passives
 if (state == 1) {
 	specialAttackCost = 15;
 	if (jumped) {
@@ -68,6 +74,9 @@ if (state == 1) {
 	} else {
 		sprite_index = spr_PlayerFire_Idle;
 	}
+	
+	scr_PassivesCont();
+	
 } else if (state == 2) {
 	specialAttackCost = 25;
 	if (jumped) {
@@ -77,6 +86,9 @@ if (state == 1) {
 	} else {
 		sprite_index = spr_PlayerWater_Idle;
 	}
+	
+	scr_PassivesCont();
+	
 } else if (state == 3) {
 	specialAttackCost = 20;
 	if (jumped) {
@@ -87,8 +99,19 @@ if (state == 1) {
 		sprite_index = spr_PlayerEarth_Idle;
 	}
 	
+	
+	
 } else {
 	specialAttackCost = 20;
+	if (jumped) {
+		sprite_index = spr_PlayerAir_Jump;
+	} else if (move != 0) {
+		sprite_index = spr_PlayerAir_Run;
+	} else if(attack){
+		sprite_index = spr_PlayerAir_Attack;
+	} else {
+		sprite_index = spr_PlayerAir_Idle;
+	}
 	
 }
 
@@ -97,6 +120,7 @@ if (state == 1) {
 // handles basic attacks
 if ((basicAttackCooldown <= 0) && (attack)) {
 	basicAttackCooldown = 10;
+	
 	if (facing == 1) {
 		instance_create_layer(x + 20, y + 10, "instances", obj_BasicAttack);
 	} else {
@@ -109,7 +133,6 @@ if ((basicAttackCooldown <= 0) && (attack)) {
 if((specialAttactCooldown <= 0) && (specialAttack) && (manaPoints >= specialAttackCost)){
 	scr_SpecialAttack();
 	manaPoints = manaPoints - specialAttackCost;
-	
 }
 
 
@@ -118,7 +141,13 @@ if (healthPoints <= 0) {
 	instance_destroy();
 }
 
+
+
+
+
+shiftState = false;
 specialAttactCooldown--;
 basicAttackCooldown--;
 enemyChargerCooldown++;
 enemySlimeCooldown++;
+passiveCooldown++;

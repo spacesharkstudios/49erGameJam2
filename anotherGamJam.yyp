@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1a26a33d-8360-4274-8ab5-55cf7ece2cf8",
+            "Value": {
+                "id": "dc752167-4a12-476a-adcb-47e78c6bc079",
+                "resourcePath": "sprites\\spr_PlayerAir_Attack\\spr_PlayerAir_Attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1effc167-f795-4858-b1c8-a2bc923a9a95",
             "Value": {
                 "id": "0bc326f3-d2e4-4279-9ac3-c025e91141f2",
@@ -204,6 +212,22 @@
                 "id": "e307facb-ee17-47a1-86ed-d904421a4328",
                 "resourcePath": "objects\\obj_HealthBar\\obj_HealthBar.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "35f585fc-9d9e-46c6-98f5-fcdf276529f0",
+            "Value": {
+                "id": "3e0719d2-7bf7-4c11-82e3-c3627c3a3c05",
+                "resourcePath": "sprites\\spr_PlayerAir_Run\\spr_PlayerAir_Run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "39d51e3d-7a0d-43c1-ba02-6da4b1940ab4",
+            "Value": {
+                "id": "a32f7746-7439-416e-b8f6-c392730cd088",
+                "resourcePath": "sprites\\spr_PlayerAir_Jump\\spr_PlayerAir_Jump.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -279,6 +303,14 @@
             }
         },
         {
+            "Key": "5c09b9fd-b237-4a2c-9145-47e23943ee72",
+            "Value": {
+                "id": "d38b7af9-a06d-4589-bc51-dd9e4772e74e",
+                "resourcePath": "scripts\\scr_Passives\\scr_Passives.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5d84fabb-b56b-4689-b7fb-9e7d05349218",
             "Value": {
                 "id": "41b66216-a869-4fd3-8d06-2a13d6a671d5",
@@ -323,6 +355,14 @@
             "Value": {
                 "id": "1605410b-9a26-4cf8-be67-fe36ee2be43e",
                 "resourcePath": "sprites\\spr_EnemyChargerGround\\spr_EnemyChargerGround.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6f77d2eb-faf1-4cd0-9ab6-ed56e0e820b9",
+            "Value": {
+                "id": "5135a868-6f87-4a19-88db-085689ecc64d",
+                "resourcePath": "sprites\\spr_PlayerAir_Idle\\spr_PlayerAir_Idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -399,6 +439,14 @@
             }
         },
         {
+            "Key": "98e733ab-e3c8-4477-9452-6ffa033143b5",
+            "Value": {
+                "id": "4813c4de-c656-40a4-a3de-7a59a508470f",
+                "resourcePath": "sprites\\spr_PlayerAir_AttackEffect\\spr_PlayerAir_AttackEffect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9914122a-5df8-4569-8cf3-34df8e56aa92",
             "Value": {
                 "id": "f6525af1-71f2-40a5-8420-bb4f2403d42e",
@@ -436,6 +484,22 @@
                 "id": "a1b1e486-da26-4680-97c7-9cefa949a5b4",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "abdd3b23-3306-473e-b32a-4632a22d08ba",
+            "Value": {
+                "id": "1edbba23-c238-42f7-9855-5c36061f1070",
+                "resourcePath": "scripts\\scr_PassivesCont\\scr_PassivesCont.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "af02dd3d-da18-4753-b3bc-82bf81e06dba",
+            "Value": {
+                "id": "ee7da536-ddd7-4db4-adc9-a9492f6d943c",
+                "resourcePath": "sprites\\spr_HitEffect\\spr_HitEffect.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -484,6 +548,14 @@
                 "id": "514b08ee-6091-4f83-b706-2fc84afdba63",
                 "resourcePath": "sprites\\spr_PlayerFire_FireBallExplosion\\spr_PlayerFire_FireBallExplosion.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b8f10819-241d-4ff3-b622-627b31375e0a",
+            "Value": {
+                "id": "abcbaa9f-3936-4201-81e9-9211320b08db",
+                "resourcePath": "views\\b8f10819-241d-4ff3-b622-627b31375e0a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -688,7 +760,9 @@
         }
     ],
     "script_order": [
-        "32fe59bd-0ed0-43a1-a11f-0e77b301b1ad"
+        "32fe59bd-0ed0-43a1-a11f-0e77b301b1ad",
+        "5c09b9fd-b237-4a2c-9145-47e23943ee72",
+        "abdd3b23-3306-473e-b32a-4632a22d08ba"
     ],
     "tutorial": ""
 }

@@ -1,6 +1,6 @@
 enemySpeed = 6;
-HP = 200
-damage = 5;
+HP = 20;
+damage = 10;
 attackCooldown = 35;
 damageCooldown = 25;
 
