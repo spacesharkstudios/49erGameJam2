@@ -9,6 +9,7 @@ damageCooldown = 25;
 
 facing = 1;
 
+damage = 10;
 input_right = 0;
 input_left = 0;
 input_jump = false;
