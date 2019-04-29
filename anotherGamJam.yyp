@@ -271,18 +271,18 @@
             }
         },
         {
-            "Key": "27e17720-5c0e-486e-a3ef-2260613358ca",
-            "Value": {
-                "id": "61f91123-be55-40e1-b452-af67d1ac57d3",
-                "resourcePath": "sprites\\spr_GunnerSlime_Bullet\\spr_GunnerSlime_Bullet.yy",
-				"resourceType": "GMSprite"
-			}
-		},
-		{
             "Key": "27916c75-5fd3-4477-9af9-13e2f93aa865",
             "Value": {
                 "id": "d6c1d957-f5eb-4bf1-9c89-8257acbd76e0",
                 "resourcePath": "sprites\\sprite51\\sprite51.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "27e17720-5c0e-486e-a3ef-2260613358ca",
+            "Value": {
+                "id": "61f91123-be55-40e1-b452-af67d1ac57d3",
+                "resourcePath": "sprites\\spr_GunnerSlime_Bullet\\spr_GunnerSlime_Bullet.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -1,4 +1,4 @@
-x = x + (myFacing * spd);
+x = x + (cow * spd);
 
 existance++;
 

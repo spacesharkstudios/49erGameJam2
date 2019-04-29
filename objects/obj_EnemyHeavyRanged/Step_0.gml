@@ -30,7 +30,7 @@ if (active) {
 		if(x > obj_Players.x){
 			facing = -1;
 		}
-		else if(x < obj_Players.x){
+		else if(x <= obj_Players.x){
 			facing = 1;
 		}
 	
